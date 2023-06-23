@@ -1,7 +1,7 @@
 /*VARIABLES DE USO GENERAL. modo de uso: var(--rosaClaro). Van a poder acceder a estas variables desde el css particular, asi que no las tienen que volver a declarar.*/
 :root{
     --rosaFuerte: #B72950;
-    --rosaMedio: #CE5274;
+    --rosaMedio: #ce4a6d;
     --rosaClaro: #fc6f94;
     --turqueza: #2B879E;
     --celeste: #3BC1E2;
@@ -60,3 +60,39 @@ html, body{height: 100%;}
 
 /*TEXTO CENTRADO*/
 .centrarTexto{text-align: center;}
+
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 10vh;
+    color: var(--casiBlanco);
+    background-color: var(--rosaMedio);
+}
+
+.nav-items{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 4em;  
+}
+
+.nav-item{
+    margin: 0px 2.5rem;
+    font-size: 1.1rem;
+    padding: 0.2rem 0.7rem;
+}
+
+.logo{
+    margin-left: 6rem;
+    padding: 0rem 0.5rem;
+    font-size: 1.1rem;
+}
+
+.nav-item:hover{
+    cursor: pointer;
+    border-bottom: 1px solid var(--celeste);
+}
+
+.pantalla{margin-top: 1rem;}
