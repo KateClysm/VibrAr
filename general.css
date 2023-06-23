@@ -1,0 +1,62 @@
+/*VARIABLES DE USO GENERAL. modo de uso: var(--rosaClaro). Van a poder acceder a estas variables desde el css particular, asi que no las tienen que volver a declarar.*/
+:root{
+    --rosaFuerte: #B72950;
+    --rosaMedio: #CE5274;
+    --rosaClaro: #fc6f94;
+    --turqueza: #2B879E;
+    --celeste: #3BC1E2;
+    --casiBlanco: #f3ecec;
+    --casiNegro: #080808;
+}
+
+/*APLICA A TODA LA PÁGINA*/
+*{  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border-box le dice al navegador tomar en cuenta para cualquier valor que se especifique de borde o de relleno para el ancho o alto de un elemento. Es decir, si se define un elemento con un ancho de 100 pixeles. Esos 100 pixeles incluíran cualquier borde o relleno que se añadan, y la caja de contenido se encogerá para absorber ese ancho extra. Esto típicamente hace mucho más fácil dimensionar elementos. */
+
+    /*font-family: ;*/
+}
+html, body{height: 100%;}
+
+/*GRADIENTE*/
+.gradiente{background: linear-gradient(var(--rosaFuerte), var(--casiNegro));}
+
+/*PRINCIPAL Nos limita el espacio en pantalla sin tener que aplicar bordes o márgenes*/
+.containerContenido{width: 90vw;}
+
+/*CENTRADO TOTAL Aplicar al contenedor padre*/
+.centradoAbsoluto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*BOTONES*/
+.boton1, .boton2{
+    min-width: 5rem;
+    outline: none;
+    padding: 10px 20px;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: var(--casiBlanco);
+}
+.boton1{ background-color: var(--turqueza);}
+.boton1:hover{
+    background-color: var(--celeste);
+    transition: 0.3s;
+}
+.boton2{background-color: var(--rosaFuerte);}
+.boton2:hover{
+    background-color: var(--rosaClaro);
+    transition: 0.3s;
+}
+
+/*TAMAÑOS DE FUENTES*/
+.fs-1{font-size: 1rem;}
+.fs-2{font-size: 1.5rem;}
+.fs-3{font-size: 2rem;}
+
+/*TEXTO CENTRADO*/
+.centrarTexto{text-align: center;}
