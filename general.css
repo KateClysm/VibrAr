@@ -5,7 +5,11 @@
     --rosaClaro: #fc6f94;
     --turqueza: #2B879E;
     --celeste: #3BC1E2;
+<<<<<<< HEAD
     --blanco: #ffffff;
+=======
+    --casiBlanco: #f3ecec;
+>>>>>>> 9ebeb038ada75f59b5a30a9c281c2fb485d6baee
     --casiNegro: #080808;
 }
 
@@ -17,6 +21,7 @@
 
     /*font-family: ;*/
 }
+<<<<<<< HEAD
 html, body{
     height: 100%;
     font-family: 'Roboto', sans-serif;
@@ -29,6 +34,15 @@ html, body{
 /*PRINCIPAL Nos limita el espacio en pantalla sin tener que aplicar bordes o márgenes*/
 .containerContenido{width: 90vw;
     padding-bottom: 2rem}
+=======
+html, body{height: 100%;}
+
+/*GRADIENTE*/
+.gradiente{background: linear-gradient(var(--rosaFuerte), var(--casiNegro));}
+
+/*PRINCIPAL Nos limita el espacio en pantalla sin tener que aplicar bordes o márgenes*/
+.containerContenido{width: 90vw;}
+>>>>>>> 9ebeb038ada75f59b5a30a9c281c2fb485d6baee
 
 /*CENTRADO TOTAL Aplicar al contenedor padre*/
 .centradoAbsoluto{
@@ -45,7 +59,11 @@ html, body{
     border:none;
     border-radius: 5px;
     cursor: pointer;
+<<<<<<< HEAD
     color: var(--blanco);
+=======
+    color: var(--casiBlanco);
+>>>>>>> 9ebeb038ada75f59b5a30a9c281c2fb485d6baee
 }
 .boton1{ background-color: var(--turqueza);}
 .boton1:hover{
@@ -61,7 +79,11 @@ html, body{
 /*TAMAÑOS DE FUENTES*/
 .fs-1{font-size: 1rem;}
 .fs-2{font-size: 1.5rem;}
+<<<<<<< HEAD
 .fs-3{font-size: 2rem; font-family: 'Tauri', sans-serif;}
+=======
+.fs-3{font-size: 2rem;}
+>>>>>>> 9ebeb038ada75f59b5a30a9c281c2fb485d6baee
 
 /*TEXTO CENTRADO*/
 .centrarTexto{text-align: center;}
@@ -71,16 +93,26 @@ html, body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+<<<<<<< HEAD
     width: 100%;
     height: 10vh;
     color: var(--blanco);
+=======
+    width: 100vw;
+    height: 10vh;
+    color: var(--casiBlanco);
+>>>>>>> 9ebeb038ada75f59b5a30a9c281c2fb485d6baee
     background-color: var(--rosaMedio);
 }
 
 .nav-items{
     display: flex;
     justify-content: space-between;
+<<<<<<< HEAD
     padding-right: 3em;  
+=======
+    padding-right: 4em;  
+>>>>>>> 9ebeb038ada75f59b5a30a9c281c2fb485d6baee
 }
 
 .nav-item{
@@ -90,7 +122,11 @@ html, body{
 }
 
 .logo{
+<<<<<<< HEAD
     margin-left: 5rem;
+=======
+    margin-left: 6rem;
+>>>>>>> 9ebeb038ada75f59b5a30a9c281c2fb485d6baee
     padding: 0rem 0.5rem;
     font-size: 1.1rem;
 }
@@ -100,7 +136,11 @@ html, body{
     border-bottom: 1px solid var(--celeste);
 }
 
+<<<<<<< HEAD
 /* .pantalla{margin-top: 1rem;} */
 .pantalla{
     padding-bottom: 2rem;
 }
+=======
+.pantalla{margin-top: 1rem;}
+>>>>>>> 9ebeb038ada75f59b5a30a9c281c2fb485d6baee
