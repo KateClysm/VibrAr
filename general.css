@@ -1,4 +1,4 @@
-/*VARIABLES DE USO GENERAL. modo de uso: var(--rosaClaro). Van a poder acceder a estas variables desde el css particular, asi que no las tienen que volver a declarar.*/
+/*VARIABLES DE USO GENERAL.*/
 :root{
     --rosaFuerte: #B72950;
     --rosaMedio: #ce4a6d;
@@ -13,9 +13,6 @@
 *{  margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border-box le dice al navegador tomar en cuenta para cualquier valor que se especifique de borde o de relleno para el ancho o alto de un elemento. Es decir, si se define un elemento con un ancho de 100 pixeles. Esos 100 pixeles incluíran cualquier borde o relleno que se añadan, y la caja de contenido se encogerá para absorber ese ancho extra. Esto típicamente hace mucho más fácil dimensionar elementos. */
-
-    /*font-family: ;*/
 }
 html, body{
     height: 100%;
@@ -24,11 +21,17 @@ html, body{
 }
 
 /*GRADIENTE*/
-.gradiente{background: linear-gradient(var(--rosaFuerte), var(--casiNegro)); height:100%; background-attachment: fixed;}
+.gradiente{
+    background: linear-gradient(var(--rosaFuerte), var(--casiNegro)); 
+    height:100%; 
+    background-attachment: fixed;
+}
 
 /*PRINCIPAL Nos limita el espacio en pantalla sin tener que aplicar bordes o márgenes*/
-.containerContenido{width: 90vw;
-    padding-bottom: 2rem}
+.containerContenido{
+    width: 90vw;
+    padding-bottom: 2rem;
+}
 
 /*CENTRADO TOTAL Aplicar al contenedor padre*/
 .centradoAbsoluto{
@@ -45,7 +48,7 @@ html, body{
     border:none;
     border-radius: 5px;
     cursor: pointer;
-    color: var(--blanco);
+    color: var(--casiBlanco);
 }
 .boton1{ background-color: var(--turqueza);}
 .boton1:hover{
@@ -61,7 +64,7 @@ html, body{
 /*TAMAÑOS DE FUENTES*/
 .fs-1{font-size: 1rem;}
 .fs-2{font-size: 1.5rem;}
-.fs-3{font-size: 2rem; font-family: 'Tauri', sans-serif;}
+.fs-3{font-size: 2rem;}
 
 /*TEXTO CENTRADO*/
 .centrarTexto{text-align: center;}
@@ -80,13 +83,13 @@ html, body{
 .nav-items{
     display: flex;
     justify-content: space-between;
-    padding-right: 3em;  
+    padding-right: 3.7rem;  
+    letter-spacing: 3px;
 }
 
 .nav-item{
-    margin: 0px 2.5rem;
-    font-size: 1.1rem;
-    padding: 0.2rem 0.7rem;
+    font-size: 1rem;
+    padding: 1.5rem 2rem;
 }
 
 .logo{
@@ -97,10 +100,16 @@ html, body{
 
 .nav-item:hover{
     cursor: pointer;
-    border-bottom: 1px solid var(--celeste);
+    background-color: var(--rosaFuerte);
+    transition: 0.3s;
 }
 
-/* .pantalla{margin-top: 1rem;} */
 .pantalla{
+    /* margin-top: 2rem; */
     padding-bottom: 2rem;
+}
+
+a{
+    text-decoration: none;
+    color: var(--blanco);
 }
