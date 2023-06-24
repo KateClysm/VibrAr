@@ -1,11 +1,11 @@
-/*VARIABLES DE USO GENERAL. modo de uso: var(--rosaClaro). Van a poder acceder a estas variables desde el css particular, asi que no las tienen que volver a declarar.*/
+/*VARIABLES DE USO GENERAL.*/
 :root{
     --rosaFuerte: #B72950;
     --rosaMedio: #ce4a6d;
     --rosaClaro: #fc6f94;
     --turqueza: #2B879E;
     --celeste: #3BC1E2;
-    --casiBlanco: #f3ecec;
+    --blanco: #ffffff;
     --casiNegro: #080808;
 }
 
@@ -13,17 +13,23 @@
 *{  margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border-box le dice al navegador tomar en cuenta para cualquier valor que se especifique de borde o de relleno para el ancho o alto de un elemento. Es decir, si se define un elemento con un ancho de 100 pixeles. Esos 100 pixeles incluíran cualquier borde o relleno que se añadan, y la caja de contenido se encogerá para absorber ese ancho extra. Esto típicamente hace mucho más fácil dimensionar elementos. */
-
-    /*font-family: ;*/
 }
-html, body{height: 100%;}
+html, body{
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+}
 
 /*GRADIENTE*/
-.gradiente{background: linear-gradient(var(--rosaFuerte), var(--casiNegro));}
+.gradiente{
+    background: linear-gradient(var(--rosaFuerte), var(--casiNegro)); 
+    height:100%; 
+    background-attachment: fixed;
+}
 
 /*PRINCIPAL Nos limita el espacio en pantalla sin tener que aplicar bordes o márgenes*/
-.containerContenido{width: 90vw;}
+.containerContenido{width: 90vw;
+    padding-bottom: 2rem}
 
 /*CENTRADO TOTAL Aplicar al contenedor padre*/
 .centradoAbsoluto{
@@ -66,16 +72,16 @@ html, body{height: 100%;}
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100vw;
+    width: 100%;
     height: 10vh;
-    color: var(--casiBlanco);
+    color: var(--blanco);
     background-color: var(--rosaMedio);
 }
 
 .nav-items{
     display: flex;
     justify-content: space-between;
-    padding-right: 4em;  
+    padding-right: 3em;  
 }
 
 .nav-item{
@@ -85,7 +91,7 @@ html, body{height: 100%;}
 }
 
 .logo{
-    margin-left: 6rem;
+    margin-left: 5rem;
     padding: 0rem 0.5rem;
     font-size: 1.1rem;
 }
@@ -95,4 +101,7 @@ html, body{height: 100%;}
     border-bottom: 1px solid var(--celeste);
 }
 
-.pantalla{margin-top: 1rem;}
+.pantalla{
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+}
