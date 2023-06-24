@@ -28,8 +28,10 @@ html, body{
 }
 
 /*PRINCIPAL Nos limita el espacio en pantalla sin tener que aplicar bordes o márgenes*/
-.containerContenido{width: 90vw;
-    padding-bottom: 2rem}
+.containerContenido{
+    width: 90vw;
+    padding-bottom: 2rem;
+}
 
 /*CENTRADO TOTAL Aplicar al contenedor padre*/
 .centradoAbsoluto{
@@ -81,13 +83,13 @@ html, body{
 .nav-items{
     display: flex;
     justify-content: space-between;
-    padding-right: 3em;  
+    padding-right: 3.5rem;  
+    letter-spacing: 3px;
 }
 
 .nav-item{
-    margin: 0px 2.5rem;
-    font-size: 1.1rem;
-    padding: 0.2rem 0.7rem;
+    font-size: 1rem;
+    padding: 1.5rem 2rem;
 }
 
 .logo{
@@ -98,10 +100,16 @@ html, body{
 
 .nav-item:hover{
     cursor: pointer;
-    border-bottom: 1px solid var(--celeste);
+    background-color: var(--rosaFuerte);
+    transition: 0.3s;
 }
 
 .pantalla{
     margin-top: 2rem;
     padding-bottom: 2rem;
+}
+
+a{
+    text-decoration: none;
+    color: var(--blanco);
 }
