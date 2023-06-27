@@ -39,15 +39,18 @@ body {
 
 .rectangulo-fondo {
     position: absolute;
-    top: 30px; /* Ajusta la posición vertical según el tamaño de tu barra de navegación */
+    top: 30px;
     left: 50%;
     transform: translateX(-50%);
-    width: 90%; /* Ajusta el ancho del rectángulo */
-    max-width: 1500px; /* Define un ancho máximo para dispositivos grandes */
-    height: 96vh; /* El rectángulo ocupará el 80% de la altura del viewport */
+    width: 90vw;
+    max-width: 1500px;
+    height: fit-content; /* La altura se ajustará automáticamente según el contenido */
     background-color: white;
-    z-index: -1; /* Coloca el rectángulo detrás del contenido */
-    margin-bottom: 1vh; /* Añade un margen inferior para separarlo del contenido */
+    z-index: -1;
+    margin-bottom: 1vh;
+    border-top: 15vh solid white;
+    border-bottom: 5vh solid white; /* Borde blanco en la parte inferior */
+    box-shadow: 0 2vh 0 white; /* Sombra blanca en la parte inferior */
 }
 
 
