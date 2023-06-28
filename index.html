@@ -5,30 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VibrAr</title>
 
-    <!--ÍCONO DE LA PÁGINA-->
-    <link rel="icon" type="image/png" href="resources\vibrarBlanco.png">
-     
+
     <!--CSS GENERAL-->
-    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="css/general.css">
 
     <!--CSS PARTICULAR-->
+    <!--Linkea el css de tu sección en particular-->
+    <link rel="stylesheet" href="css/styles.css">
 
-
-    <!--GOOGLE FONTS-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Tauri&display=swap" rel="stylesheet">
-
-    <!--FONT AWESOME-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+      <!--GOOGLE FONTS-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Tauri&display=swap" rel="stylesheet">
 </head>
 <body class="gradiente">
 
     <!--Barra de navegación-->
     <div class="nav">
         <div class="logo">
-            <img src="resources\vibrarBlanco.png" alt="logoVibrArBlanco" class="logo-nav">
+            VibrAr
         </div>
         <div class="nav-items centradoAbsoluto">
             <a class="nav-item" href="/index.html">Inicio</a>
@@ -42,48 +37,55 @@
     <div class="centradoAbsoluto pantalla">
 
         <!--Este es el container donde deben trabajar-->
-        <div class="containerContenido">
-            
+        <div class="containerContenido centradoAbsoluto">
+            <div class="PAGINAPRINCIPAL">
+               <div id="slider">
+                <input type="radio" name="slider" id="slide1" checked>
+                <input type="radio" name="slider" id="slide2">
+                <input type="radio" name="slider" id="slide3">
+                <input type="radio" name="slider" id="slide4">
+                <div id="slides">
+                   <div id="overflow">
+                      <div class="inner">
+                         <div class="slide slide_1">
+                         </div>
+                         <div class="slide slide_2">
+                         </div>
+                         <div class="slide slide_3">
+                         </div>
+                         <div class="slide slide_4">
+                         </div>
+                      </div>
+                   </div>
+                </div>
+                <div id="controls">
+                   <label for="slide1"></label>
+                   <label for="slide2"></label>
+                   <label for="slide3"></label>
+                   <label for="slide4"></label>
+                </div>
+                <div id="bullets">
+                   <label for="slide1"></label>
+                   <label for="slide2"></label>
+                   <label for="slide3"></label>
+                   <label for="slide4"></label>
+                </div>
+            </div>
+            <div class=seccionespagina>
+                <section class="anuncios">
+                <h1 class="anunciostexto">ANUNCIOS</h1>
+            <img src="img/Sorteo.png" class="Sorteo" alt="Sorteo">
+            </section>
+            <aside class="cartelera">
+                <h1 class="CarteleraTexto">CARTELERA</h1>
+                <img src="img/Cartelera.png" class="CarteleraPortada" alt="Cartelera">
+
+            </aside>
+            </div>
         </div>
     </div>
 
     
-    <footer class="centradoAbsoluto">
-        <div class="container">
-            <div class="centradoAbsoluto redes">
-                <a class="a-footer" href="#">
-                    <i class="fa-brands fa-instagram icons-footer centr"> <p class="nombres">VibrAr</p> </i> 
-                </a>
-    
-                <a href="#" class="a-footer">
-                    <i class="fa-brands fa-square-facebook icons-footer"> <p class="nombres">VibrAr Oficial</p> </i> 
-                </a>
 
-                <a href="#" class="a-footer">
-                    <i class="fa-brands fa-square-twitter icons-footer"> <p class="nombres">VibrArg</p> </i> 
-                </a>                
-            </div>   
-
-            <div class="centradoAbsoluto derechos">
-                <p class="derechos">© Derechos reservados por </p>
-
-                <a href="#"  class="a-footer">
-                    <i class="fa-brands fa-github icons-footer"> <p class="nombres">Maria Monchot</p> </i> 
-                </a>    
-                <a href="#" class="a-footer">
-                    <i class="fa-brands fa-github icons-footer"> <p class="nombres">Milagros Torres</p> </i> 
-                </a>    
-                <a href="#" class="a-footer">
-                    <i class="fa-brands fa-github icons-footer"> <p class="nombres">Agustina Barbona</p> </i> 
-                </a>    
-                <a href="#" class="a-footer">
-                    <i class="fa-brands fa-github icons-footer"> <p class="nombres">Daniela Fernandez</p> </i>
-                </a>    
-                <a href="#" class="a-footer">
-                    <i class="fa-brands fa-github icons-footer"> <p class="nombres">Yamila Luna</p> </i> 
-                </a>    
-            </div>
-        </div>
-    </footer>
 </body>
 </html>
