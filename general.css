@@ -3,7 +3,7 @@
     --rosaFuerte: #B72950;
     --rosaMedio: #ce4a6d;
     --rosaClaro: #fc6f94;
-    --turqueza: #2B879E;
+    --turqueza: #0095f6;
     --celeste: #3BC1E2;
     --blanco: #ffffff;
     --casiNegro: #080808;
@@ -14,6 +14,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 html, body{
     height: 100%;
     font-family: 'Roboto', sans-serif;
@@ -30,7 +31,7 @@ html, body{
 /*PRINCIPAL Nos limita el espacio en pantalla sin tener que aplicar bordes o márgenes*/
 .containerContenido{
     width: 90vw;
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
 }
 
 /*CENTRADO TOTAL Aplicar al contenedor padre*/
@@ -110,6 +111,11 @@ html, body{
 }
 
 a{
+    cursor: pointer;
     text-decoration: none;
     color: var(--blanco);
+}
+
+.logo-nav{
+    height: 40px;
 }
