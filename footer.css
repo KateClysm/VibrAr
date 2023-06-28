@@ -1,0 +1,43 @@
+:root{
+  --rosaFuerte: #B72950;
+  --rosaMedio: #ce4a6d;
+  --rosaClaro: #fc6f94;
+  --turqueza: #2B879E;
+  --celeste: #3BC1E2;
+  --blanco: #ffffff;
+  --casiNegro: #080808;
+}
+
+footer {
+  background: linear-gradient(var(--rosaFuerte), var(--casiNegro)); 
+  height: 50%; 
+  background-attachment: fixed;
+  color:var(--blanco);
+  padding: 15px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  margin-top: 650px;
+  
+}
+
+.container {
+  max-width: 900vh;
+  margin: 0 auto;
+}
+
+.logo-instagram img {
+  width: 20px; /* Ajusta el tamaño del logo según tus necesidades */
+}
+
+.nombre p {
+  margin-top: 10px; /* Ajusta el espacio entre el logo y el texto según tus necesidades */
+}
+
+.info-adicional p {
+  margin-top: 10px; /* Ajusta el espacio entre el texto y la información adicional según tus necesidades */
+}
+
+.derechos {
+  margin-top: 10px; /* Ajusta el espacio entre la información adicional y los derechos reservados según tus necesidades */
+}
