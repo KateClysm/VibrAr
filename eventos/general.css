@@ -1,0 +1,138 @@
+/*VARIABLES DE USO GENERAL.*/
+:root{
+    --rosaFuerte: #B72950;
+    --rosaMedio: #ce4a6d;
+    --rosaClaro: #fc6f94;
+    --turqueza: #0095f6;
+    --celeste: #3BC1E2;
+    --blanco: #ffffff;
+    --casiNegro: #080808;
+}
+
+/*APLICA A TODA LA PÁGINA*/
+*{  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+}
+
+/*GRADIENTE*/
+.gradiente{
+    background: linear-gradient(var(--rosaFuerte), var(--casiNegro)); 
+    height:100%; 
+    background-attachment: fixed;
+}
+
+/*PRINCIPAL Nos limita el espacio en pantalla sin tener que aplicar bordes o márgenes*/
+.containerContenido{
+    width: 90vw;
+    padding-bottom: 3rem;
+}
+
+/*CENTRADO TOTAL Aplicar al contenedor padre*/
+.centradoAbsoluto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*BOTONES*/
+.boton1, .boton2{
+    min-width: 5rem;
+    outline: none;
+    padding: 10px 20px;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: var(--casiBlanco);
+}
+.boton1{ background-color: var(--turqueza);}
+.boton1:hover{
+    background-color: var(--celeste);
+    transition: 0.3s;
+}
+.boton2{background-color: var(--rosaFuerte);}
+.boton2:hover{
+    background-color: var(--rosaClaro);
+    transition: 0.3s;
+}
+
+/*TAMAÑOS DE FUENTES*/
+.fs-1{font-size: 1rem;}
+.fs-2{font-size: 1.5rem;}
+.fs-3{font-size: 2rem;}
+
+/*TEXTO CENTRADO*/
+.centrarTexto{text-align: center;}
+
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 10vh;
+    color: var(--blanco);
+    background-color: var(--rosaMedio);
+}
+
+.nav-items{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 3.7rem;  
+    letter-spacing: 3px;
+}
+
+.nav-item{
+    font-size: 1rem;
+    padding: 1.5rem 2rem;
+}
+
+.logo{
+    margin-left: 5rem;
+    padding: 0rem 0.5rem;
+    font-size: 1.1rem;
+}
+
+.nav-item:hover{
+    cursor: pointer;
+    background-color: var(--rosaFuerte);
+    transition: 0.3s;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--blanco);
+}
+
+.logo-nav{
+    height: 40px;
+}
+
+/*-----------------------------------*/
+
+footer {
+    background-color: var(--casiNegro);
+    height: 20vh;
+    color: var(--blanco);}
+.icons-footer{
+    color: var(--blanco);
+    font-size: 1.5rem;
+    padding: 0px 10px; 
+}
+.icons-footer:hover{color: var(--turqueza);}
+.derechos, .redes, .nombres {
+    align-items: baseline;
+    font-size: 0.8rem;
+    font-family: 'Roboto', sans-serif;
+}
+.nombres {display: inline-block;}
+.redes {padding-bottom: 20px;}
+
+
