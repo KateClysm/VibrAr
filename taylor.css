@@ -1,6 +1,7 @@
 .containerContenido{
     background-color: var(--blanco);
     height: 100%;
+    padding-bottom: 7rem;
 }
 
 .containerGrid{
