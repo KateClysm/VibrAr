@@ -62,6 +62,11 @@ html, body{
     transition: 0.3s;
 }
 
+/*TAMAÑOS DE FUENTES*/
+.fs-1{font-size: 1rem;}
+.fs-2{font-size: 1.5rem;}
+.fs-3{font-size: 2rem;}
+
 /*TEXTO CENTRADO*/
 .centrarTexto{text-align: center;}
 
@@ -106,7 +111,9 @@ a{
     color: var(--blanco);
 }
 
-.logo-nav{height: 40px;}
+.logo-nav{
+    height: 40px;
+}
 
 /*-----------------------------------*/
 
@@ -127,3 +134,5 @@ footer {
 }
 .nombres {display: inline-block;}
 .redes {padding-bottom: 20px;}
+
+
