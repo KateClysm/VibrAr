@@ -36,4 +36,5 @@ https://trello.com/b/B43LzBu0/grupo-3-organizaci%C3%B3n
 ![Contacto Agus Barbona](https://github.com/KateClysm/VibrAr/assets/109751647/0d0cdbc9-e1ec-48ea-83ab-1cad666739aa)
 
 <br>
+
 ![404 Milagros Torres](https://github.com/KateClysm/VibrAr/assets/109751647/cf6d60ba-ccf9-416a-8ff1-56221d50f349)
