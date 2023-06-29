@@ -18,7 +18,7 @@
     margin-bottom: 3rem;
 }
 .baner-fondo{
-    background-image: url(baners/8be936d0-c27f-4e8e-971d-271552b74322.jpg);
+    background-image: url(baners/maneskin-world-tour-header-1536x864.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
@@ -70,9 +70,7 @@
     border-radius: 3px;
     border: none;
 }
-.fecha-grid{
-    margin-top: 2px;
-}
+
 .opacidad{
     transition: all 2s ease-out; 
 }
@@ -88,7 +86,9 @@
 
 }
 
-
+.fechas{
+    padding-top: 20px;
+}
 .col1, .col2{
     padding-top: 15px;
 }
