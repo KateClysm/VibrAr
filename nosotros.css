@@ -1,0 +1,126 @@
+.containerContenido{
+    background-color: var(--blanco);
+    height: 100%;
+}
+
+.pantalla{
+    margin-top: 0;
+}
+
+.logo-en-pagina{
+   padding-top: 3rem;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.contacto-texto{
+    padding-top: 20px;
+}
+
+.containerTexto{
+    width: 900px;
+    margin: 0 auto;
+}
+
+.logoContacto{
+    height: 100px;
+}
+
+h2, h4, .contacto-texto{
+    padding: 20px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .rectangulo-fondo {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90vw;
+    max-width: 1500px;
+    height: fit-content; 
+    background-color: var(--blanco);
+    z-index: -1;
+    margin-bottom: 1vh;
+    border-top: 15vh solid var(--blanco);
+    border-bottom: 5vh solid var(--blanco); 
+    box-shadow: 0 2vh 0 var(--blanco);
+    padding-bottom: 10px; 
+}
+
+
+.logo-en-pagina {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20vh; 
+    height: 20vh; 
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1; 
+}
+
+.logo-en-pagina img {
+    width: 20vh; 
+    height: auto;
+    border-radius: 30%;
+}
+
+.bienvenida{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 20vh;
+    margin-left: 20vh;
+    margin-top: 5vh;
+    max-width: 80%; 
+    max-height: 10%;
+    font-size: 14px; 
+    font-style: italic;
+    font-size: 18px; 
+    font-weight: bolder;
+    color: var(--rosaFuerte);
+}
+
+.speach{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 20vh;
+    margin-left: 20vh;
+    margin-top: 5vh;
+    max-width: 80%; 
+    max-height: 10%;
+    font-size: 2vh; 
+    font-style: italic;
+}
+
+.texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 25vh;
+    margin-left: 25vh;
+    margin-top: 5vh;    
+    font-size: 2.07vh; 
+} */
+

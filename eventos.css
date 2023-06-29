@@ -90,7 +90,7 @@
 }
 
 .flyer-eventosE{
-    width: 1050px;
+    width: 915px;
     flex-grow: 1;
     object-fit: contain;
     border: 1px solid grey;
@@ -105,4 +105,8 @@
 
 .flyer-eventos:hover {
     transform: scale(1.05);
+}
+
+.eventos-a{
+    color: var(--rosaClaro);
 }
