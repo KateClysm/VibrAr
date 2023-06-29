@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VibrAr</title>
-
     <!--ÍCONO DE LA PÁGINA-->
     <link rel="icon" type="image/png" href="resources\vibrarBlanco.png">
-     
+            
     <!--CSS GENERAL-->
     <link rel="stylesheet" href="general.css">
 
     <!--CSS PARTICULAR-->
-
+    <link rel="stylesheet" href="paginaPrincipal.css">
+    <link rel="stylesheet" href="styles.css">
 
     <!--GOOGLE FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,17 +21,17 @@
 
     <!--FONT AWESOME-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+
 </head>
 <body class="gradiente">
 
-    <!--Barra de navegación-->
-    <div class="nav">
+     <!--Barra de navegación-->
+     <div class="nav">
         <div class="logo">
             <img src="resources\vibrarBlanco.png" alt="logoVibrArBlanco" class="logo-nav">
         </div>
         <div class="nav-items centradoAbsoluto">
-            <a class="nav-item" href="/index.html">Inicio</a>
+            <a class="nav-item" href="/paginaPrincipal.html">Inicio</a>
             <a class="nav-item" href="/eventos.html">Eventos</a>
             <a class="nav-item" href="/nosotros.html">Nosotros</a>
             <a class="nav-item" href="/contactos.html">Contacto</a>
@@ -40,19 +40,60 @@
 
     <!--Este contenedor centra y separa la pantalla del nav-->
     <div class="centradoAbsoluto pantalla">
-
-        <!--Este es el container donde deben trabajar-->
-        <div class="containerContenido">
-            
-        </div>
-    </div>
-
     
-    <footer class="centradoAbsoluto">
+        <!--Este es el container donde deben trabajar-->
+        <div class="containerContenido centradoAbsoluto">
+            <div class="PAGINAPRINCIPAL">
+                <div id="slider">
+                    <input type="radio" name="slider" id="slide1" checked>
+                    <input type="radio" name="slider" id="slide2">
+                    <input type="radio" name="slider" id="slide3">
+                    <input type="radio" name="slider" id="slide4">
+                    <div id="slides">
+                        <div id="overflow">
+                            <div class="inner">
+                                <div class="slide slide_1">
+                                </div>
+                                <div class="slide slide_2">
+                                </div>
+                                <div class="slide slide_3">
+                                </div>
+                                <div class="slide slide_4">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="controls">
+                        <label for="slide1"></label>
+                        <label for="slide2"></label>
+                        <label for="slide3"></label>
+                        <label for="slide4"></label>
+                    </div>
+                    <div id="bullets">
+                        <label for="slide1"></label>
+                        <label for="slide2"></label>
+                        <label for="slide3"></label>
+                        <label for="slide4"></label>
+                    </div>
+                </div>
+                <div class=seccionespagina>
+                    <section class="anuncios">
+                        <h1 class="anunciostexto">ANUNCIOS</h1>
+                        <img src="img/Sorteo.png" class="Sorteo" alt="Sorteo">
+                    </section>
+                    <aside class="cartelera">
+                        <h1 class="CarteleraTexto">CARTELERA</h1>
+                        <img src="img/Cartelera.png" class="CarteleraPortada" alt="Cartelera">
+    
+                    </aside>
+                </div>
+            </div>
+        </div>
+    <!-- <footer class="centradoAbsoluto">
         <div class="container">
             <div class="centradoAbsoluto redes">
                 <a class="a-footer" href="#">
-                    <i class="fa-brands fa-instagram icons-footer centr"> <p class="nombres">VibrAr</p> </i> 
+                    <i class="fa-brands fa-instagram icons-footer"> <p class="nombres">VibrAr</p> </i> 
                 </a>
     
                 <a href="#" class="a-footer">
@@ -84,6 +125,8 @@
                 </a>    
             </div>
         </div>
-    </footer>
+    </footer> -->
+    
+
 </body>
 </html>
