@@ -51,19 +51,19 @@
     transition: 2s;
  }
  #slides .slide_1 {
-    background-image: url(img\Theerastourslider);
+    background-image: url(/img/Theerastourslider);
     background-size: cover;
  }
  #slides .slide_2 {
-    background-image: url(img\TheWeekendslider.png);
+    background-image: url(/img/TheWeekendslider.png);
     background-size: cover;
  }
  #slides .slide_3 {
-    background-image: url(img\RHCPslider.png);
+    background-image: url(/img/RHCPslider.png);
     background-size: cover;
  }
  #slides .slide_4 {
-    background-image: url(img\TanBionicaslider.png);
+    background-image: url(/img/TanBionicaslider.png);
     background-size: cover;
  }
  #controls {
@@ -87,7 +87,7 @@
  #slide2:checked ~ #controls label:nth-child(3),
  #slide3:checked ~ #controls label:nth-child(4),
  #slide4:checked ~ #controls label:nth-child(1) {
-    background-image: url(img\Flechaderecha.png) no-repeat;
+    background-image: url(/img/Flechaderecha.png) no-repeat;
     float:right;
     margin: 0 -50px 0 0;
     display: block;
@@ -96,7 +96,7 @@
  #slide2:checked ~ #controls label:nth-last-child(3),
  #slide3:checked ~ #controls label:nth-last-child(4),
  #slide4:checked ~ #controls label:nth-last-child(1) {
-    background-image: url(img\Flechaizquierda.png) no-repeat;
+    background-image: url(/img/Flechaizquierda.png) no-repeat;
     float:left;
     margin: 0 0 0 -50px;
     display: block;
@@ -136,24 +136,24 @@
     }
  }
 
-#slides .slide_1:hover {content: url(img\Theerastourhover2.jpg);
+#slides .slide_1:hover {content: url(/img/Theerastourhover2.jpg);
     cursor: pointer;
     opacity: 55%;
 }
 
-#slides .slide_2:hover {content: url(img\ThWeekendhover.png);
+#slides .slide_2:hover {content: url(/img/ThWeekendhover.png);
     transition: 2s;
     cursor: pointer;
     opacity: 75%;
 }
 
-#slides .slide_3:hover {content: url(img\RHCPhover.png);
+#slides .slide_3:hover {content: url(/img/RHCPhover.png);
     transition: 2s;
     cursor: pointer;
     opacity: 75%;
 }
 
-#slides .slide_4:hover {content: url(img\Tanbionicahover.png);
+#slides .slide_4:hover {content: url(/img/Tanbionicahover.png);
     transition: 2s;
     cursor: pointer;
     opacity: 75%;
