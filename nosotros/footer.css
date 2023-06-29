@@ -10,34 +10,24 @@
 
 footer {
   background: linear-gradient(var(--rosaFuerte), var(--casiNegro)); 
-  height: 50%; 
-  background-attachment: fixed;
-  color:var(--blanco);
-  padding: 15px;
-  text-align: center;
-  position: relative;
-  z-index: 1;
-  margin-top: 650px;
+  height: 20vh;
+  color: var(--blanco);
+  margin-top: 600px;
   
 }
-
-.container {
-  max-width: 900vh;
-  margin: 0 auto;
+.icons-footer{
+    color: var(--blanco);
+    font-size: 1.5rem;
+    padding: 0px 10px; 
 }
-
-.logo-instagram img {
-  width: 20px; /* Ajusta el tamaño del logo según tus necesidades */
+.icons-footer:hover{color: var(--turqueza);
 }
-
-.nombre p {
-  margin-top: 10px; /* Ajusta el espacio entre el logo y el texto según tus necesidades */
+.derechos, .redes, .nombres {
+    align-items: baseline;
+    font-size: 0.8rem;
+    font-family: 'Roboto', sans-serif;
 }
-
-.info-adicional p {
-  margin-top: 10px; /* Ajusta el espacio entre el texto y la información adicional según tus necesidades */
+.nombres {display: inline-block;
 }
-
-.derechos {
-  margin-top: 10px; /* Ajusta el espacio entre la información adicional y los derechos reservados según tus necesidades */
+.redes {padding-bottom: 20px;
 }
