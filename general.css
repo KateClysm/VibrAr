@@ -209,8 +209,22 @@ a{
     transition: transform 0.3s;
 }
 
-.flyer-eventos:hover{
+.flyer-eventosE{
+    width: 1030px;
+    flex-grow: 1;
+    object-fit: contain;
+    border: 1px solid grey;
+    border-radius: 8px;
+    box-shadow: 0 0 10px grey;
+    transition: transform 0.3s;
+}
+
+.flyer-eventosE:hover{
+    transform: scale(1.1);
+}
+.flyer-eventos:hover {
     transform: scale(1.1);
     
 }
+
 
