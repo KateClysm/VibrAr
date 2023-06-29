@@ -1,4 +1,4 @@
-<h1>VibrAr</h1>
+![plantillas en baja Maria Monchot](https://github.com/KateClysm/VibrAr/assets/109751647/9dcec875-7207-4608-9fb5-04c3c34cf55c)<h1>VibrAr</h1>
 
 
 <h2>Proyecto Grupal sobre una página de eventos, hecho para Empujar Coders.</h2>
@@ -17,10 +17,10 @@ https://trello.com/b/B43LzBu0/grupo-3-organizaci%C3%B3n
 <h3>Prototipos en Figma:</h3>
 <br>
 <br>
-![Diseño](https://github.com/KateClysm/VibrAr/assets/109751647/a1a566ae-9bec-40aa-8e70-6b8c40e2ce76)
+![Diseño](https://github.com/KateClysm/VibrAr/assets/109751647/ea18a160-5e9e-4f78-a646-ce00010cdfa2)
 <br>
 <br>
-![plantillas en baja Maria Monchot](https://github.com/KateClysm/VibrAr/assets/109751647/2cb97988-b137-47b6-9ce8-c8cffdd5e45c)
+![plantillas en baja Maria Monchot](https://github.com/KateClysm/VibrAr/assets/109751647/13d68f4f-d201-4ff3-a85c-627fe9cdab58)
 <br>
 <br>
 ![Pag Prin y Prot de Artista Maria Monchot](https://github.com/KateClysm/VibrAr/assets/109751647/e1af774a-2f9d-4142-89fc-e2a83a6a8eaf)
