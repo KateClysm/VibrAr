@@ -6,7 +6,12 @@
 <br>
 Maria Monchot   |    Yamila Luna   |    Daniela Fernandez   |    Milagros Torres   |    Agustina Barbona 
 <br>
-<h3>Organización en Trello:</h3>
+
+<h3>Deploy en Firebase:</h3>
+https://vibrar-argentina.web.app/
+<br>
+
+<h3>Organización del proyecto en Trello:</h3>
 
 https://trello.com/b/B43LzBu0/grupo-3-organizaci%C3%B3n
 <br>
