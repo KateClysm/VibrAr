@@ -3,11 +3,11 @@
     --rosaFuerte: #B72950;
     --rosaMedio: #ce4a6d;
     --rosaClaro: #fc6f94;
-    --rosaSClaro: #ffaec3;
-    --turqueza: #2B879E;
+    --turqueza: #0095f6;
     --celeste: #3BC1E2;
     --blanco: #ffffff;
     --casiNegro: #080808;
+    --rosaSClaro: #ffaec3;
 }
 
 /*APLICA A TODA LA PÁGINA*/
@@ -15,6 +15,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 html, body{
     height: 100%;
     font-family: 'Roboto', sans-serif;
@@ -30,9 +31,8 @@ html, body{
 
 /*PRINCIPAL Nos limita el espacio en pantalla sin tener que aplicar bordes o márgenes*/
 .containerContenido{
-    background-color: rgb(255, 255, 255);
     width: 90vw;
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
 }
 
 /*CENTRADO TOTAL Aplicar al contenedor padre*/
@@ -63,11 +63,6 @@ html, body{
     transition: 0.3s;
 }
 
-/*TAMAÑOS DE FUENTES*/
-.fs-1{font-size: 1rem;}
-.fs-2{font-size: 1.5rem;}
-.fs-3{font-size: 2rem;}
-
 /*TEXTO CENTRADO*/
 .centrarTexto{text-align: center;}
 
@@ -85,7 +80,7 @@ html, body{
 .nav-items{
     display: flex;
     justify-content: space-between;
-    padding-right: 3.5rem;  
+    padding-right: 3.7rem;  
     letter-spacing: 3px;
 }
 
@@ -106,15 +101,36 @@ html, body{
     transition: 0.3s;
 }
 
-.pantalla{
-    margin-top: 2rem;
-    padding-bottom: 2rem;
-}
-
 a{
+    cursor: pointer;
     text-decoration: none;
     color: var(--blanco);
 }
+
+.logo-nav{height: 40px;}
+
+/*-----------------------------------*/
+
+footer {
+    background-color: var(--casiNegro);
+    height: 20vh;
+    color: var(--blanco);}
+.icons-footer{
+    color: var(--blanco);
+    font-size: 1.5rem;
+    padding: 0px 10px; 
+}
+.icons-footer:hover{color: var(--turqueza);}
+.derechos, .redes, .nombres {
+    align-items: baseline;
+    font-size: 0.8rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nombres {display: inline-block;}
+.redes {padding-bottom: 20px;}
+
+
 
 .eventos h1 {
     margin-top: 1.5rem;
@@ -226,5 +242,3 @@ a{
     transform: scale(1.1);
     
 }
-
-
