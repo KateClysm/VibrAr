@@ -18,7 +18,7 @@
     margin-bottom: 3rem;
 }
 .baner-fondo{
-    background-image: url(baners/theweeknd.jpg);
+    background-image: url(/img/theweekndbaner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
