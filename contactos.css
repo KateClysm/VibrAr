@@ -6,8 +6,8 @@
 
 .pantalla{
     margin-top: 0;
-    height: 100%;
-    text-align: center;
+    /* height: 100%;
+    text-align: center; */
 }
 
 .logo-en-pagina{
@@ -17,32 +17,19 @@
     border-radius: 50%;
 }
 
-.texto {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-right: 25vh;
-    margin-left: 25vh;
-    margin-top: 5vh;    
-    font-size: 2.50vh; 
+.contacto-texto{
+    padding-top: 20px;
 }
 
-.texto2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-right: 25vh;
-    margin-left: 25vh;
-    margin-top: 5vh;    
-    font-size: 2.07vh; 
+.containerTexto{
+    width: 900px;
+    margin: 0 auto;
 }
 
 .Formulario{
     width: 900px;
-    height: 600px;
-    margin: auto;
+    height: 100%;
+    padding: 3rem 0px;
      
 }
 
@@ -73,4 +60,15 @@
     background-color: grey;
     border: none;
     padding: 12px;
+}
+
+.logoContacto{
+    height: 100px;
+}
+
+.boton-enviar{
+    cursor: pointer;
+}
+.boton-enviar:hover{
+    background-color: var(--turqueza);
 }
