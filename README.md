@@ -3,11 +3,12 @@
 <h2>Proyecto Grupal sobre una página de eventos, hecho para Empujar Coders.</h2>
 <br>
 <h3>Integrantes:</h3>
-<br>
+
 Maria Monchot   |    Yamila Luna   |    Daniela Fernandez   |    Milagros Torres   |    Agustina Barbona 
 <br>
 
 <h3>Deploy en Firebase:</h3>
+
 https://vibrar-argentina.web.app/
 <br>
 
@@ -15,8 +16,8 @@ https://vibrar-argentina.web.app/
 
 https://trello.com/b/B43LzBu0/grupo-3-organizaci%C3%B3n
 <br>
+
 <h3>Prototipos en Figma:</h3>
-<br>
 
 ![Diseño](https://github.com/KateClysm/VibrAr/assets/109751647/ea18a160-5e9e-4f78-a646-ce00010cdfa2)
 
