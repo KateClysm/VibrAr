@@ -7,7 +7,7 @@
 Maria Monchot   |    Yamila Luna   |    Daniela Fernandez   |    Milagros Torres   |    Agustina Barbona 
 <br>
 <h3>Organización en Trello:</h3>
-<br>
+
 https://trello.com/b/B43LzBu0/grupo-3-organizaci%C3%B3n
 <br>
 <h3>Prototipos en Figma:</h3>
