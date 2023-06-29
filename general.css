@@ -113,3 +113,21 @@ a{
     text-decoration: none;
     color: var(--blanco);
 }
+
+footer {
+    background-color: var(--casiNegro);
+    height: 20vh;
+    color: var(--blanco);}
+.icons-footer{
+    color: var(--blanco);
+    font-size: 1.5rem;
+    padding: 0px 10px; 
+}
+.icons-footer:hover{color: var(--turqueza);}
+.derechos, .redes, .nombres {
+    align-items: baseline;
+    font-size: 0.8rem;
+    font-family: 'Roboto', sans-serif;
+}
+.nombres {display: inline-block;}
+.redes {padding-bottom: 20px;}
