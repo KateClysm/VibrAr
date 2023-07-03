@@ -1,0 +1,112 @@
+.eventos h1 {
+    padding: 2rem;
+    font-size: 2rem;
+    color: var(--casiNegro);
+}
+
+.eventos{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--blanco);
+}
+
+.row-eventos {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.colum-eventos1 {
+    margin-right: 2rem;
+    margin-left: 1rem;
+    width: 20%;
+    padding: 0.3rem;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.colum-eventos1 ul li{
+    margin-top: 0.4rem;
+    list-style: none;
+    font-size: 1rem;
+    padding: 0.4rem;
+    font-size: 100%;
+}
+
+.colum-eventos1 h2 {
+    font-size: 100%;
+    color: var(--casiNegro);
+    box-shadow: 0 0 10px var(--rosaSClaro);
+    letter-spacing: 2px;
+    border-radius: 3px;
+    background-color: var(--rosaSClaro);
+    padding: 0.4rem;
+}
+
+.btn-eventos {
+    margin-top: 2rem;
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    border: solid 1px var(--rosaClaro);
+    background-color: var(--blanco);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    color: var(--rosaClaro);
+    
+}
+
+.btn-eventos:hover {
+    transform: translateY(-3px);
+    background-color: var(--rosaClaro);
+    border: solid 1px transparent;
+    color: var(--blanco);
+    box-shadow: 0 5px 10px var(--rosaSClaro);
+}
+
+
+.colum-eventos2 {
+    margin: 1rem;
+    width: 80%;
+    padding: 0.2rem;
+}
+
+.flyer-eventos {
+    max-height: 100%;
+    max-width: 100%;
+    flex-grow: 1;
+    object-fit: contain;
+    border: 1px solid grey;
+    border-radius: 8px;
+    box-shadow: 0 0 10px grey;
+    transition: transform 0.3s;
+}
+
+.flyer-eventosE{
+    width: 915px;
+    flex-grow: 1;
+    object-fit: contain;
+    border: 1px solid grey;
+    border-radius: 8px;
+    box-shadow: 0 0 10px grey;
+    transition: transform 0.3s;
+}
+
+.flyer-eventosE:hover{
+    transform: scale(1.05);
+}
+
+.flyer-eventos:hover {
+    transform: scale(1.05);
+}
+
+.eventos-a{
+    color: var(--rosaClaro);
+}
