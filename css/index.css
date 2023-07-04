@@ -1,5 +1,6 @@
-body {background-image: url(/img/fondoprincipal.jpg);
-   background-repeat: no-repeat;
+body {
+    background-image: url(/img/fondoprincipal.jpg);
+    background-repeat: no-repeat;
    background-size: cover;
    
    }

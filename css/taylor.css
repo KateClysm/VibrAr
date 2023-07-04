@@ -1,94 +1,296 @@
-.containerContenido{
+/*ESTILOS CONSTANTES, no afectados por las media queries*/
+.container-blanco{
+    width: 90vw;
     background-color: var(--blanco);
-    height: 100%;
-    padding-bottom: 7rem;
-}
+    display: flex;
+    justify-self: center;
+    align-items: center;}
 
-.containerGrid{
+.container-section{width: 82vw;}
+
+.baner img{width: 100%;height: 100%;}
+
+.info-general{
     display: grid;
-    grid-template-areas: "baner baner baner"
-                         "col1 col2 col3";
-}
+    height: 100%;}
 
-.baner{
-    height: 350px;
-    width: 100%;
-    margin-top: 2rem;
-    grid-area: baner;
-    margin-bottom: 3rem;
-}
-.baner-fondo{
-    background-image: url(/img/taylorbaner.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 80%;
-    margin: auto;
-    
-}
-.col1, .col2, .col3{
-    width: auto;
-    padding: 0px 20px;
-}
-.col1{
-    height: 420px;
-    grid-area: col1;
-}
-.col2{
-    height: 420px;
-    grid-area: col2;
-}
-.col3{
-    height: 420px;
-    grid-area: col3;
-} 
-
-.presentado-logo{width: 120px;}
-.presentado-titulo, .preventa-titulo{
-    padding: 15px 0px; 
-    font-size: 0.9rem;
-    }
-
-
-.preventa{
+.info h2{
     background-color: var(--turqueza);
-    color: var(--blanco);  
-    border-radius: 2px;
-}
+    color:var(--blanco);}
 
- .presentado, .insta2, .logoV{
-    padding-bottom: 1rem;
-}
-.logoV{
-    padding-top: 2rem;
-}
+.presentado a, .redes a, .derechos a {cursor: pointer;}
 
-.fechas, .ubicacion{ padding-bottom: 1rem;
-}
+.instaFans, .visual iframe, .ubicacion iframe, .ubicacion {
+    width: 100%;}
 
-.preventa, .ubicacion-iframe, .fecha-grid, .foto-artista, .container-foto-artista{
-    border-radius: 3px;
-    border: none;
-}
-.fecha-grid{
-    margin-top: 2px;
-}
-.opacidad{
-    transition: all 2s ease-out; 
-}
+.redes a i p, .derechos a i p{display: inline-flex;}
 
-.fecha-grid{
+.redes a:hover, .derechos a:hover{color: var(--turqueza); transition: 0.3s;}
+
+.logoVibrar, .artista .texto p, .redes a i, .derechos a i{
+    text-align: center;}
+
+
+.fechas{
+    display: flex;
+    flex-direction: column;
+}
+.fecha{
     display: grid;
-    grid-template-columns: 120px 160px 134px;
-    font-size: 0.7rem;
-    border: 0.1px solid rgba(128, 128, 128, 0.753);
-    padding: 10px 5px;
-    text-align: center;
-    font-weight: bold;
-
+    grid-template-columns: auto auto auto;
+}
+.artista{
+    height: 100%;
+}
+/*******************************************/
+@media screen and (max-width: 375px) {
+    
+    .baner{padding: 1rem 0;}
+    .info-general{
+        grid-template-columns: 1fr;
+        padding-top: 1rem;}
+    .ubicacion{
+        height: 25vh;
+        margin-top: 4rem;}
+    .ubicacion iframe{height: 25vh;}
+    .info{height: 30vh;}
+    .info h2, .presentado h3 {
+        font-size: 0.8rem;
+        padding: 0.6rem;}
+    .presentado a img{width: 4rem;}
+    .instaFans{height: 19vh;}
+    .instaFans h4{
+        padding-top: 0.5rem;}
+    .fechas{
+        padding: 1rem 0;
+        gap: 0.5rem;}
+    .fecha{
+        border: 0.1rem solid rgba(128, 128, 128, 0.651);
+        padding: 0.6rem 0.2rem;}
+    .artista{
+        padding-top: 1rem;
+        grid-template-columns: 1fr;}
+    .visual iframe{
+        height: 40vh;}
+    .artista .texto p{
+        padding: 0.5rem 0;}
+    .logoVibrar img{width: 4rem;}
+    .container-section{padding-bottom: 1rem;}
+    .redes a, .derechos a{
+        color: var(--casiNegro);
+        padding: 0.5rem 0.5rem;}
+    .redes a, .derechos a, .artista .texto p, .fecha, .instaFans h4{font-size: 0.6rem;}
 }
 
+@media screen and (min-width: 375px) and (max-width: 425px) {
+    
+    .baner{padding: 1rem 0;}
+    .info-general{
+        grid-template-columns: 1fr;
+        padding-top: 1rem;}
+    .ubicacion{
+        height: 35vh;
+        margin-top: 4rem;}
+    .ubicacion iframe{height: 35vh;}
+    .info{height: 30vh;}
+    .info h2, .presentado h3 {
+        font-size: 0.8rem;
+        padding: 0.6rem;}
+    .presentado a img{width: 4rem;}
+    .instaFans{height: 16vh;}
+    .instaFans h4{
+        padding-top: 0.5rem;}
+    .fechas{
+        padding: 1rem 0;
+        gap: 0.5rem;}
+    .fecha{
+        border: 0.1rem solid rgba(128, 128, 128, 0.651);
+        padding: 0.6rem 0.2rem;}
+    .artista{
+        padding-top: 1rem;
+        grid-template-columns: 1fr;}
+    .visual iframe{
+        height: 50vh;}
+    .artista .texto p{
+        padding: 0.5rem 0;}
+    .logoVibrar img{width: 4rem;}
+    .container-section{padding-bottom: 1rem;}
+    .redes a, .derechos a{
+        color: var(--casiNegro);
+        padding: 0.5rem 0.5rem;}
+    .redes a, .derechos a, .artista .texto p, .fecha, .instaFans h4{font-size: 0.6rem;}
+    .instaFans iframe{
+        height: 16vh;
+        width: 100%;
+    }
+}
 
-.col1, .col2{
-    padding-top: 15px;
+@media screen and (min-width: 435px) and (max-width: 520px) {
+    
+    .baner{padding: 1rem 0;}
+    .info-general{
+        grid-template-columns: 1fr;
+        padding-top: 1rem;}
+    .ubicacion{
+        height: 40vh;
+        margin-top: 4rem;}
+    .instaFans iframe{
+        height: 16vh;
+        width: 100%;
+    }
+    .ubicacion iframe{height: 40vh;}
+    .info{height: 30vh;}
+    .info h2, .presentado h3 {
+        font-size: 0.8rem;
+        padding: 0.6rem;}
+    .presentado a img{width: 4rem;}
+    .instaFans{height: 16vh;}
+    .instaFans h4{
+        padding-top: 0.5rem;}
+    .fechas{
+        padding: 1rem 0;
+        gap: 0.5rem;}
+    .fecha{
+        border: 0.1rem solid rgba(128, 128, 128, 0.651);
+        padding: 0.6rem 0.2rem;}
+    .artista{
+        padding-top: 1rem;
+        grid-template-columns: 1fr;}
+    .visual iframe{
+        height: 55vh;}
+    .artista .texto p{
+        padding: 0.5rem 0;}
+    .logoVibrar img{width: 4rem;}
+    .container-section{padding-bottom: 1rem;}
+    .redes a, .derechos a{
+        color: var(--casiNegro);
+        padding: 0.5rem 0.5rem;}
+    .redes a, .derechos a, .artista .texto p, .fecha, .instaFans h4{font-size: 0.6rem;}
+}
+
+@media screen and (min-width: 520px) and (max-width: 768px) {
+    
+    .baner{padding: 1rem 0;}
+    .info-general{
+        grid-template-columns: 1fr;
+        padding-top: 1rem;}
+    .ubicacion{
+        height: 45vh;
+        margin-top: 4rem;}
+    .instaFans iframe{
+        height: 20vh;
+        width: 100%;
+    }
+    .ubicacion iframe{height: 45vh;}
+    .info{height: 30vh;}
+    .info h2, .presentado h3 {
+        font-size: 0.8rem;
+        padding: 0.6rem;}
+    .presentado a img{width: 4rem;}
+    .instaFans{height: 16vh;}
+    .instaFans h4{
+        padding-top: 0.5rem;}
+    .fechas{
+        padding: 1rem 0;
+        gap: 0.5rem;}
+    .fecha{
+        border: 0.1rem solid rgba(128, 128, 128, 0.651);
+        padding: 0.6rem 0.2rem;}
+    .artista{
+        padding-top: 1rem;
+        grid-template-columns: 1fr;}
+    .visual iframe{
+        height: 65vh;}
+    .artista .texto p{
+        padding: 0.5rem 0;}
+    .logoVibrar img{width: 4rem;}
+    .container-section{padding-bottom: 1rem;}
+    .redes a, .derechos a{
+        color: var(--casiNegro);
+        padding: 0.5rem 0.5rem;}
+    .redes a, .derechos a, .artista .texto p, .fecha, .instaFans h4{font-size: 0.6rem;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1500px) {
+    
+    .baner{padding: 1rem 0;}
+    .info-general{
+        grid-template-columns: 1fr 1fr;
+        padding-top: 1rem;}
+    .ubicacion{
+        height: 45vh; padding-left: 5rem;}
+    .instaFans iframe{
+        height: 13vh;
+        width: 100%;
+    }
+    .ubicacion iframe{height: 45vh;}
+    .info{height: 30vh;}
+    .info h2, .presentado h3 {
+        font-size: 1.2rem;
+        padding: 0.6rem;}
+    .presentado a img{width: 4rem;}
+    .instaFans{height: 16vh;}
+    .instaFans h4{
+        padding-top: 0.5rem;}
+    .fechas{
+        padding: 1rem 0;
+        gap: 0.5rem;}
+    .fecha{
+        border: 0.1rem solid rgba(128, 128, 128, 0.651);
+        padding: 0.6rem 0.2rem;}
+    .artista{
+        padding-top: 1rem;
+        grid-template-columns: 1fr;}
+    .visual iframe{
+        height: 70vh;}
+    .artista .texto p{
+        padding: 0.5rem 0;}
+    .logoVibrar img{width: 4rem;}
+    .container-section{padding-bottom: 1rem;}
+    .redes a, .derechos a{
+        color: var(--casiNegro);
+        padding: 0.5rem 0.5rem;}
+    .redes a, .derechos a, .artista .texto p, .fecha, .instaFans h4{font-size: 1rem;}
+}
+
+@media screen and (min-width: 1500px) and (max-width: 2500px) {
+    
+    .baner{padding: 1rem 0;}
+    .info-general{
+        grid-template-columns: 1fr 1fr;
+        padding-top: 1rem;}
+    .ubicacion{
+        height: 45vh; padding-left: 5rem;}
+    .instaFans iframe{
+        height: 18vh;
+        width: 100%;
+    }
+    .ubicacion iframe{height: 60vh;}
+    .info{height: 30vh;}
+    .info h2, .presentado h3 {
+        font-size: 1.2rem;
+        padding: 0.6rem;}
+    .presentado a img{width: 4rem;}
+    .instaFans{height: 16vh;}
+    .instaFans h4{
+        padding-top: 0.5rem;}
+    .fechas{
+        padding: 5rem 0;
+        gap: 0.5rem;}
+    .fecha{
+        border: 0.1rem solid rgba(128, 128, 128, 0.651);
+        padding: 0.6rem 0.2rem;}
+    .artista{
+        padding-top: 10rem;
+        grid-template-columns: 1fr;}
+    .visual iframe{
+        height: 90vh;}
+    .artista .texto p{
+        padding: 0.5rem 0;}
+    .logoVibrar img{width: 10rem;}
+    .container-section{padding-bottom: 1rem;}
+    .redes a, .derechos a{
+        color: var(--casiNegro);
+        padding: 0.5rem 0.5rem;}
+    .redes a, .derechos a, .artista .texto p, .fecha, .instaFans h4{font-size: 1rem;}
 }

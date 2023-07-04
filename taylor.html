@@ -24,140 +24,146 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
 </head>
-<body class="gradiente">
+<body>
 
-     <!--Barra de navegación-->
-     <div class="nav">
+    <!--Barra de navegación-->
+    <div class="container-nav">
         <div class="logo">
-            <img src="resources\vibrarBlanco.png" alt="logoVibrArBlanco" class="logo-nav">
+            <img src="resources/logotipo-blanco.png" alt="Logo de VibrAr">
         </div>
-        <div class="nav-items centradoAbsoluto">
-            <a class="nav-item" href="/index.html">Inicio</a>
-            <a class="nav-item" href="/eventos.html">Eventos</a>
-            <a class="nav-item" href="/nosotros.html">Nosotros</a>
-            <a class="nav-item" href="/contactos.html">Contacto</a>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/eventos.html">Eventos</a></li>
+                <li><a href="/nosotros.html">Nosotros</a></li>
+                <li><a href="/contactos.html">Contacto</a></li>
+            </ul>
+        </nav>   
+
+        <a onclick="abrirNavegador()" class="menu" href="#">
+            <i class="fa-solid fa-bars icono-menu"></i>
+        </a>
+    
+        <div id="mobile-menu" class="overlay">
+            <a onclick="cerrarNavegador()" class="close">&times;</a>
+            <div class="overlay-content">
+                <a href="/index.html">Inicio</a>
+                <a href="/eventos.html">Eventos</a>
+                <a href="/nosotros.html">Nosotros</a>
+                <a href="/contactos.html">Contacto</a> 
+            </div>
         </div>
     </div>
 
-    <!--Este contenedor centra y separa la pantalla del nav-->
-    <div class="centradoAbsoluto pantalla">
 
-        <!--Este es el container donde deben trabajar-->
-        <div class="containerContenido centradoAbsoluto">
-            <div class="div">
-                <div class="containerGrid">
+    <div class="container-padre centradoAbsoluto">
+        <div class="container-blanco centradoAbsoluto">
+            <div class="container-section">
 
-                    <div class="baner centradoAbsoluto">
-                        <div class="baner-fondo centrarTexto"></div>
-                    </div>
+                <div class="baner">
+                    <img src="/img/taylorbaner.jpg" alt="Baner Eras Tour Taylor Swift">
+                </div>
 
-                    <div class="col1">
-                        <div class="preventa">
-                            <h2 class="preventa-titulo centrarTexto fs-1">VENTA GENERAL 06/05</h2>
-                        </div>
-                        <div class="presentado centrarTexto">
-                            <h2 class="presentado-titulo">PRESENTADO POR</h3>
-                            <div class="presentado-logos">
-                                <a href="https://www.allaccess.com.ar/" target="_blank" >
-                                    <img class="presentado-logo " src="/resources/allaccess-black.png" alt="allaccess logo">
-                                   
-                                </a>
-                                
-                                <a class="logo-dfentertainment" href="https://www.dfentertainment.com/" target="_blank" >
-                                    <img class="presentado-logo" src="/resources/DF-dark.svg" alt="dfentertainment logo">
-                                </a>
-                                
-                            </div>
-                        </div>
+                <div class="info-general">
+
+                    <div class="info">
+                        <h2 class="centrarTexto">VENTA GENERAL 06/05</h2>
                         
-                        <div class="insta2">
+                        <div class="presentado centrarTexto">
+                            <h3>PRESENTADO POR</H3>
+
+                            <a href="https://www.allaccess.com.ar/" target="_blank">
+                                <img src="/resources/allaccess-black.png" alt="allaccess logo">
+                            </a>
+                            <a class="logo-dfentertainment" href="https://www.dfentertainment.com/" target="_blank">
+                                <img src="/resources/DF-dark.svg" alt="dfentertainment logo">
+                            </a>
+                        </div>
+
+                        <div class="instaFans">
+                            <h4 class="centrarTexto">Taylor Swift official management team</h4>
                             <iframe src="https://www.instagram.com/taylornation/embed" frameborder="0"
-                            width="320" height="100" class="instaTaylorIF" scrolling="no"></iframe>
-                        </div>
-                        <div class="logoV centrarTexto centradoAbsoluto">
-                            <img src="/resources/logoVibrar.jpeg" alt="" width="100" height="70" class="">
-                        </div>
-                    </div>
-
-                    <div class="col2">
-
-                        <div class="ubicacion centrarTexto">
-                            <iframe class="ubicacion-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.32594794751!2d-58.452349824774664!3d-34.54530175441453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb43ae6018ddf%3A0x3d7f60a75bfa308a!2sEstadio%20M%C3%A2s%20Monumental!5e0!3m2!1ses!2sar!4v1687965926535!5m2!1ses!2sar" width="430" height="280" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                scrolling="no"></iframe>
                         </div>
 
                         <div class="fechas centrarTexto">
-                            <div class="fecha-grid">
-                                <div class="dia">09 de noviembre</div>
-                                <div class="destino">Buenos Aires, Argentina</div>
-                                <div class="lugar">Estadio River Plate</div>
+                            <div class="fecha">
+                                <div>09 de noviembre</div>
+                                <div>Buenos Aires, Argentina</div>
+                                <div>Estadio River Plate</div>
                             </div>
-
-                            <div class="fecha-grid">
-                                <div class="dia">10 de noviembre</div>
-                                <div class="destino">Buenos Aires, Argentina</div>
-                                <div class="lugar">Estadio River Plate</div>
+    
+                            <div class="fecha">
+                                <div>10 de noviembre</div>
+                                <div>Buenos Aires, Argentina</div>
+                                <div>Estadio River Plate</div>
                             </div>
-
-                            <div class="fecha-grid">
-                                <div class="dia">11 de noviembre</div>
-                                <div class="destino">Buenos Aires, Argentina</div>
-                                <div class="lugar">Estadio River Plate</div>
+    
+                            <div class="fecha">
+                                <div>11 de noviembre</div>
+                                <div>Buenos Aires, Argentina</div>
+                                <div>Estadio River Plate</div>
                             </div>
                         </div>
-
-                        
-
                     </div>
-                    <div class="col3">
-                        <div id="link" class="container-foto-artista">
-                            <iframe src="https://www.instagram.com/p/Ct7DOiqurUX/embed" frameborder="0"
-                            width="340" height="440" class="instaTaylorIF" scrolling="no"></iframe>
+                    
+                    <div class="ubicacion">
+                        <iframe class="ubicacion-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.32594794751!2d-58.452349824774664!3d-34.54530175441453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb43ae6018ddf%3A0x3d7f60a75bfa308a!2sEstadio%20M%C3%A2s%20Monumental!5e0!3m2!1ses!2sar!4v1687965926535!5m2!1ses!2sar"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                    
+                </div>
+
+
+                <div class="artista">
+                    <div class="visual">
+                        <iframe src="https://www.instagram.com/p/Ct7DOiqurUX/embed" frameborder="0"
+                         scrolling="no" ></iframe>
+                    </div>
+                    <div class="texto">
+                        <p>
+                            numquam odit placeat esse. Ea quia, cum explicabo reprehenderit minus error repudiandae, id quos officiis dolorem quam quaerat commodi voluptatem esse veritatis molestias ratione excepturi. Facere magnam perferendis, doloribus sunt amet id quo enim totam eveniet officiis doloremque laudantium rerum, pariatur velit odio quasi obcaecati ex nihil expedita omnis? Voluptas alias magnam velit! Quasi non distinctio velit autem illo nostrum cupiditate, tenetur laudantium sequi voluptatibus. Nobis repellat, officiis facilis autem pariatur nesciunt animi quasi totam, a veritatis quibusdam.
+                        </p>
+                        <div class="logoVibrar">
+                            <img src="/resources/image (1).png" alt="Logo VibrAr">
                         </div>
                     </div>
                 </div>
+
             </div>
-            
-           
         </div>
     </div>
 
     <footer class="centradoAbsoluto">
-        <div class="container">
-            <div class="centradoAbsoluto redes">
-                <a class="a-footer" href="#">
-                    <i class="fa-brands fa-instagram icons-footer"> <p class="nombres">VibrAr</p> </i> 
-                </a>
+        <div class="container-blanco centradoAbsoluto">
+            <div class="container-section">
+
+                <div class="redes centradoAbsoluto">
+                    <a href="#">
+                        <i class="fa-brands fa-instagram icons-footer"> <p>VibrAr</p> </i> 
+                    </a>
+        
+                    <a href="#">
+                        <i class="fa-brands fa-square-facebook icons-footer"> <p>VibrAr Oficial</p> </i> 
+                    </a>
     
-                <a href="#" class="a-footer">
-                    <i class="fa-brands fa-square-facebook icons-footer"> <p class="nombres">VibrAr Oficial</p> </i> 
-                </a>
+                    <a href="#">
+                        <i class="fa-brands fa-square-twitter icons-footer"> <p>VibrArg</p> </i> 
+                    </a>  
+                </div>
 
-                <a href="#" class="a-footer">
-                    <i class="fa-brands fa-square-twitter icons-footer"> <p class="nombres">VibrArg</p> </i> 
-                </a>                
-            </div>   
-
-            <div class="centradoAbsoluto derechos">
-                <p class="derechos">© Derechos reservados por </p>
-
-                <a href="https://github.com/KateClysm"  class="a-footer" target="_blank">
-                    <i class="fa-brands fa-github icons-footer"> <p class="nombres">Maria Monchot</p> </i> 
-                </a>    
-                <a href="https://github.com/militorres84" class="a-footer" target="_blank">
-                    <i class="fa-brands fa-github icons-footer"> <p class="nombres">Milagros Torres</p> </i> 
-                </a>    
-                <a href="https://github.com/AgusBarbona" class="a-footer" target="_blank">
-                    <i class="fa-brands fa-github icons-footer"> <p class="nombres">Agustina Barbona</p> </i> 
-                </a>    
-                <a href="https://github.com/Ariana-Seok" class="a-footer" target="_blank">
-                    <i class="fa-brands fa-github icons-footer"> <p class="nombres">Daniela Fernandez</p> </i>
-                </a>    
-                <a href="https://github.com/Ysluna" class="a-footer" target="_blank">
-                    <i class="fa-brands fa-github icons-footer"> <p class="nombres">Yamila Luna</p> </i> 
-                </a>    
+                <div class="derechos centradoAbsoluto">    
+                    <a href="https://github.com/KateClysm/VibrAr" target="_blank">© Derechos reservados por
+                        <i class="fa-brands fa-github icons-footer"> <p>VibrAr Proyect</p> </i> 
+                    </a>     
+                </div>
             </div>
         </div>
     </footer>
+ 
 
+    <!--nav script-->
+    <script src="/scripts/nav.js"></script>
 </body>
 </html>
