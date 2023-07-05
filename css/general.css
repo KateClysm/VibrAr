@@ -1,9 +1,9 @@
 /*VARIABLES DE USO GENERAL.*/
 :root{
-    --rosaMedio: #d316b3;
+    --fucsia: #d316b3;
     --turqueza: #0095f6;
     --blanco: #ffffff;
-    --casiNegro: #080808;
+    --negro: #080808;
 }
 
 /*APLICA A TODA LA PÁGINA*/
@@ -16,7 +16,7 @@
 }
 
 body{
-    background-color: var(--casiNegro);
+    background-color: var(--negro);
     height:100%; }
 
 /*CENTRADO TOTAL Aplicar al contenedor padre*/
@@ -35,7 +35,7 @@ body{
 
 /*---------------BARRA DE NAVEGACIÓN--------------------*/
 .container-nav{
-    background-color: var(--casiNegro);
+    background-color: var(--negro);
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -51,9 +51,9 @@ body{
     padding: 20px 30px;
     cursor: pointer;}
 
-.nav-links li:hover{background-color: var(--rosaMedio); border-radius: 2px;}
+.nav-links li:hover{background-color: var(--fucsia); border-radius: 2px;}
 
-.container-nav .nav-links a{font-size: 1.2rem; color: #eceff1;  cursor: pointer; }
+.container-nav .nav-links a{font-size: 1.2rem; color: var(--blanco);  cursor: pointer; }
 
 .menu {display:none;} /*contenedor del ícono de menú*/
 
@@ -72,7 +72,7 @@ body{
     /*Las propiedades top y bottom especifican el desplazamiento vertical desde su posición original; las propiedades left y right especifican su desplazamiento horizontal.*/
     left: 0;
     top: 0;
-    background-color: var(--rosaMedio);
+    background-color: var(--fucsia);
     overflow: hidden;
     transition: all 0.3s ease 0s;}
 
@@ -89,7 +89,7 @@ body{
     display: block;
     transition: all 0.3s ease 0s;
     font-weight: 1.2rem;
-    color: #eceff1;}
+    color: var(--blanco);}
 
 .container-nav .overlay .close{
     position: absolute; /*hace que un elemento se coloque respecto a su contenedor posicionado mas cercano*/
@@ -99,7 +99,7 @@ body{
 
 /*FOOTER - ESTILOS CONSTANTES*/
 .redes a, .derechos a{
-    color: var(--casiNegro);
+    color: var(--negro);
     cursor: pointer;}   
 .redes a i, .derechos a i {text-align: center;}
 .redes a i p, .derechos a i p{display: inline-flex;}
