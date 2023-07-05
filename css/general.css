@@ -19,18 +19,14 @@ body{
     background-color: var(--negro);
     height:100%; }
 
-/*CENTRADO TOTAL Aplicar al contenedor padre*/
+
 .centradoAbsoluto{
     display: flex;
     justify-content: center;
     align-items: center;}
 
 
-/*TEXTO CENTRADO*/
 .centrarTexto{text-align: center;}
-
-
-/*---------------FOOTER--------------------*/
 
 
 /*---------------BARRA DE NAVEGACIÓN--------------------*/
@@ -98,28 +94,54 @@ body{
     font-size: 50px;}
 
 /*FOOTER - ESTILOS CONSTANTES*/
+.redes a i, .derechos a i{text-align: center;}
 .redes a, .derechos a{
     color: var(--negro);
-    cursor: pointer;}   
-.redes a i, .derechos a i {text-align: center;}
+    cursor: pointer;}
+.container-section{
+    width: 82vw; 
+    background-color: var(--blanco);
+    padding-bottom: 1rem;
+}
 .redes a i p, .derechos a i p{display: inline-flex;}
-.redes a:hover, .derechos a:hover{color: var(--turqueza);}
+.redes a:hover, .derechos a:hover{color: var(--turqueza); transition: 0.3s;}
+.redes a, .derechos a{font-size: 0.5rem;}
+.redes a, .derechos a{
+    color: var(--negro);
+    padding: 0.5rem 0.5rem;}
+
+
 
 /*------------MEDIA QUERIES------------*/   
-
-@media screen and (max-width: 375px) {
- 
-
-    /*FOOTER*/
-    .redes a, .derechos a{
-        padding: 0.5rem 0.5rem;
-        font-size: 0.6rem;}
-}
 
 @media screen and (max-width: 768px) {
    /*BARRA DE NAVEGACIÓN*/
    .close{display: inherit;}
+
    .nav-links {display: none;}
-   .menu {display: inherit;}/*Hace que el elemento al cual se aplica tome el valor calculado de la propiedad de su elemento padre. Como previamente se encontraba en none, ahora se muestra dentro del nav.*/
+
+   .menu {display: inherit;}
+
    .container-nav .logo img{height: 30px;}
+}
+
+
+@media screen and (min-width: 375px) and (max-width: 500px) {
+    /*FOOTER*/
+    .redes a, .derechos a{font-size: 0.6rem;}
+}
+
+@media screen and (min-width: 500px) and (max-width: 768px) {
+    /*FOOTER*/
+    .redes a, .derechos a{font-size: 0.8rem;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 2560px) {
+     /*FOOTER*/
+    .redes a, .derechos a{font-size: 1rem;}
+}
+
+@media screen and (min-width: 2560px) and (max-width: 4000px) {
+    /*FOOTER*/
+    .redes a, .derechos a{font-size:1.1rem;}
 }

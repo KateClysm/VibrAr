@@ -5,8 +5,6 @@
     display: flex;
     justify-self: center;
     align-items: center;}
-
-.container-section{width: 82vw;}
 .info-general{
     width: 82vw;
     height: 100%;}
@@ -19,15 +17,11 @@
     background-color: var(--turqueza);
     color:var(--blanco);}
 
-.presentado a, .redes a, .derechos a {cursor: pointer;}
+.presentado a{cursor: pointer;}
 
 .instaFans, .visual iframe, .ubicacion iframe, .ubicacion { width: 100%;}
 
-.redes a i p, .derechos a i p{display: inline-flex;}
-
-.redes a:hover, .derechos a:hover{color: var(--turqueza); transition: 0.3s;}
-
-.logoVibrar, .artista .texto p, .redes a i, .derechos a i{text-align: center;}
+.logoVibrar, .artista .texto p{text-align: center;}
 
 .fechas{
     display: flex;
@@ -65,11 +59,8 @@
     .artista .texto p{
         padding-bottom: 0.5rem 0;}
     .logoVibrar img{width: 4rem; padding-top: 0.5rem ;}
-    .container-section{padding-bottom: 1rem;}
-    .redes a, .derechos a{
-        color: var(--negro);
-        padding: 0.5rem 0.5rem;}
-    .redes a, .derechos a, .artista .texto p, .fecha{font-size: 0.5rem;}
+ 
+    .artista .texto p, .fecha{font-size: 0.5rem;}
     .artista{
         grid-template-columns: 1fr;}
     
@@ -113,7 +104,7 @@
         height: 16vh;}
     .visual{
         height: 50vh;}
-        .redes a, .derechos a, .artista .texto p, .fecha{font-size: 0.6rem;}
+    .artista .texto p, .fecha{font-size: 0.6rem;}
 }
 @media screen and (min-width: 500px) and (max-width: 768px) {
     .baner{padding: 3rem 0;}
@@ -135,7 +126,7 @@
         box-sizing:content-box;
         padding: 3rem 0rem;
         height: 85vh;}
-        .redes a, .derechos a, .artista .texto p, .fecha{font-size: 0.8rem;}
+        .artista .texto p, .fecha{font-size: 0.8rem;}
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -164,7 +155,7 @@
         padding: 3rem 0rem;
         height: 80vh;}
 
-    .redes a, .derechos a, .artista .texto p, .fecha{font-size: 1rem;}
+    .artista .texto p, .fecha{font-size: 1rem;}
     
     .fechas{
         padding: 5rem 0;
@@ -211,7 +202,6 @@
     .fechas{
         padding: 3rem 0;
     }
-    .redes a, .derechos a{ font-size: 1rem;}
     .logoVibrar img{width: 7rem; padding-top: 1rem;}
 
 
@@ -254,7 +244,6 @@
     .fechas{
         padding: 3rem 0;
     }
-    .redes a, .derechos a{ font-size: 1rem;}
     .logoVibrar img{width: 7rem; padding-top: 1rem;}
 
 
@@ -298,6 +287,5 @@
     .fechas{
         padding: 3rem 0;
     }
-    .redes a, .derechos a{ font-size: 1.2rem;}
     .logoVibrar img{width: 9rem; padding-top: 1rem;}
 }

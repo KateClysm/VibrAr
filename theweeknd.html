@@ -27,15 +27,32 @@
 <body class="gradiente">
 
      <!--Barra de navegación-->
-     <div class="nav">
+    <div class="container-nav">
         <div class="logo">
-            <img src="resources\vibrarBlanco.png" alt="logoVibrArBlanco" class="logo-nav">
+            <img src="resources/logotipo-blanco.png" alt="Logo de VibrAr">
         </div>
-        <div class="nav-items centradoAbsoluto">
-            <a class="nav-item" href="/index.html">Inicio</a>
-            <a class="nav-item" href="/eventos.html">Eventos</a>
-            <a class="nav-item" href="/nosotros.html">Nosotros</a>
-            <a class="nav-item" href="/contactos.html">Contacto</a>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/eventos.html">Eventos</a></li>
+                <li><a href="/nosotros.html">Nosotros</a></li>
+                <li><a href="/contactos.html">Contacto</a></li>
+            </ul>
+        </nav>   
+
+        <a onclick="abrirNavegador()" class="menu" href="#">
+            <i class="fa-solid fa-bars icono-menu"></i>
+        </a>
+    
+        <div id="mobile-menu" class="overlay">
+            <a onclick="cerrarNavegador()" class="close">&times;</a>
+            <div class="overlay-content">
+                <a href="/index.html">Inicio</a>
+                <a href="/eventos.html">Eventos</a>
+                <a href="/nosotros.html">Nosotros</a>
+                <a href="/contactos.html">Contacto</a> 
+            </div>
         </div>
     </div>
 
@@ -113,42 +130,35 @@
     </div>
 
     <footer class="centradoAbsoluto">
-        <div class="container">
-            <div class="centradoAbsoluto redes">
-                <a class="a-footer" href="#">
-                    <i class="fa-brands fa-instagram icons-footer centr"> <p class="nombres">VibrAr</p> </i> 
-                </a>
+        <div class="container-blanco centradoAbsoluto">
+            <div class="container-section">
+
+                <div class="redes centradoAbsoluto">
+                    <a href="#">
+                        <i class="fa-brands fa-instagram icons-footer"> <p>VibrAr</p> </i> 
+                    </a>
+        
+                    <a href="#">
+                        <i class="fa-brands fa-square-facebook icons-footer"> <p>VibrAr Oficial</p> </i> 
+                    </a>
     
-                <a href="#" class="a-footer">
-                    <i class="fa-brands fa-square-facebook icons-footer"> <p class="nombres">VibrAr Oficial</p> </i> 
-                </a>
+                    <a href="#">
+                        <i class="fa-brands fa-square-twitter icons-footer"> <p>VibrArg</p> </i> 
+                    </a>  
+                </div>
 
-                <a href="#" class="a-footer">
-                    <i class="fa-brands fa-square-twitter icons-footer"> <p class="nombres">VibrArg</p> </i> 
-                </a>                
-            </div>   
-
-            <div class="centradoAbsoluto derechos">
-                <p class="derechos">© Derechos reservados por </p>
-
-                <a href="#"  class="a-footer">
-                    <i class="fa-brands fa-github icons-footer"> <p class="nombres">Maria Monchot</p> </i> 
-                </a>    
-                <a href="#" class="a-footer">
-                    <i class="fa-brands fa-github icons-footer"> <p class="nombres">Milagros Torres</p> </i> 
-                </a>    
-                <a href="#" class="a-footer">
-                    <i class="fa-brands fa-github icons-footer"> <p class="nombres">Agustina Barbona</p> </i> 
-                </a>    
-                <a href="#" class="a-footer">
-                    <i class="fa-brands fa-github icons-footer"> <p class="nombres">Daniela Fernandez</p> </i>
-                </a>    
-                <a href="#" class="a-footer">
-                    <i class="fa-brands fa-github icons-footer"> <p class="nombres">Yamila Luna</p> </i> 
-                </a>    
+                <div class="derechos centradoAbsoluto">    
+                    <a href="https://github.com/KateClysm/VibrAr" target="_blank">© Derechos reservados por
+                        <i class="fa-brands fa-github icons-footer"> <p>VibrAr Proyect</p> </i> 
+                    </a>     
+                </div>
             </div>
         </div>
     </footer>
+ 
+
+    <!--nav script-->
+    <script src="/scripts/nav.js"></script>
 
 </body>
 </html>
