@@ -9,6 +9,7 @@
     width: 82vw;
     height: 100%;}
 
+.baner{ height: 600px;}
 .baner img{width: 100%;height: 100%;}
 
 .info-general{display: grid; }
@@ -32,60 +33,61 @@
     grid-template-columns: auto auto auto;}
 
 .artista{
+    display: grid;
     height: 100%;}
 /*******************************************/
-@media screen and (max-width: 4000px) {
-    .baner{padding: 1rem 0;}
 
-    .info-general{
-        grid-template-columns: 1fr;}
-   
-    .info h2, .presentado h3 {
-        font-size: 0.8rem;
-        padding: 1rem;}
+.baner{padding: 1rem 0;}
 
-    .instaFans h4{
-        font-size: 0.7rem;
-        padding-top: 1rem; }
+.info-general{
+    grid-template-columns: 1fr;}
 
-    .presentado a img{width: 5rem;}
+.info h2, .presentado h3 {
+    font-size: 0.8rem;
+    padding: 1rem;}
 
-    .fechas{gap: 0.5rem; padding: 2rem 0; box-sizing: content-box;}
+.instaFans h4{
+    font-size: 0.7rem;
+    padding-top: 1rem; }
 
-    .fecha{
-        border: 0.1rem solid rgba(128, 128, 128, 0.651);
-        padding: 0.6rem 0.2rem;}
-   
-    .artista .texto p{
-        padding-bottom: 0.5rem 0;}
-    .logoVibrar img{width: 4rem; padding-top: 0.5rem ;}
- 
-    .artista .texto p, .fecha{font-size: 0.5rem;}
-    .artista{
-        grid-template-columns: 1fr;}
-    
-    /*iframes*/
-    .instaFans{
-        box-sizing:content-box;
-        height: 19vh;}
-    .instaFans iframe{
-        height: 100%;
-        width: 100%;}
-    .ubicacion{
-        height: 40vh;
-        box-sizing:content-box;
-        padding-bottom: 2rem 0;}
-    .ubicacion iframe{
-        height: 100%;
-        width: 100%;}
-    .visual{
-        box-sizing:content-box;
-        padding: 2rem 0rem;
-        height: 40vh;}
-    .visual iframe{
-        height: 100%;
-        width: 100%;}
-}
+.presentado a img{width: 5rem;}
+
+.fechas{gap: 0.5rem; padding: 2rem 0; box-sizing: content-box;}
+
+.fecha{
+    border: 0.1rem solid rgba(128, 128, 128, 0.651);
+    padding: 0.6rem 0.2rem;}
+
+.artista .texto p{
+    padding-bottom: 0.5rem 0;}
+.logoVibrar img{width: 4rem; padding-top: 0.5rem ;}
+
+.artista .texto p, .fecha{font-size: 0.5rem;}
+.artista{
+    grid-template-columns: 1fr;}
+
+/*iframes*/
+.instaFans{
+    box-sizing:content-box;
+    height: 19vh;}
+.instaFans iframe{
+    height: 100%;
+    width: 100%;}
+.ubicacion{
+    height: 40vh;
+    box-sizing:content-box;
+    padding-bottom: 2rem 0;}
+.ubicacion iframe{
+    height: 100%;
+    width: 100%;}
+.visual{
+    box-sizing:content-box;
+    padding: 2rem 0rem;
+    height: 40vh;}
+.visual iframe{
+    height: 100%;
+    width: 100%;}
+/*-------------------------------------------------*/
 
 
 @media screen and (min-width: 375px) and (max-width: 425px) {
@@ -212,6 +214,12 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    .artista{
+        grid-template-columns: 1fr 1fr;
+        padding: 1rem 0;
+        align-items: center;
+    }
+
     .baner{padding: 3rem 0;}
     
     .presentado a img{width: 9rem;}
@@ -236,15 +244,22 @@
         width: 40vw;
         padding:0 0rem 0rem 2rem;}
     .visual{
-        padding: 3rem 0rem;
-        height: 80vh;}
+        /* padding: 3rem 0rem; */
+        height: 65vh;}
 
     .fecha{font-size: 0.8rem;}
     .artista .texto p{ font-size: 1.2rem;}
+
+    .artista .texto {
+        display: grid;
+        align-content: center;
+        grid-template-columns: 1fr;
+        padding-left: 3rem;
+    }
     .fechas{
         padding: 3rem 0;
     }
-    .logoVibrar img{width: 7rem; padding-top: 1rem;}
+    .logoVibrar img{width: 7rem; padding-top: 1rem; text-align: center;}
 
 
 }
@@ -253,6 +268,10 @@
     .info-general{
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+
+    .artista{
+        padding: 3rem 0;
     }
 
     .baner{padding: 3rem 0;}
@@ -279,7 +298,7 @@
         width: 40vw;
         padding:0 0rem 2rem 2rem;}
     .visual{
-        padding: 3rem 0rem;
+        /* padding: 3rem 0rem; */
         height: 80vh;}
 
     .fecha{font-size: 0.8rem;}

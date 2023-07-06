@@ -25,9 +25,19 @@ body{
     justify-content: center;
     align-items: center;}
 
+.container-blanco{
+    width: 90vw;
+    background-color: var(--blanco);
+    display: flex;
+    justify-self: center;
+    align-items: center;}
 
 .centrarTexto{text-align: center;}
-
+.container-section{
+    width: 82vw; 
+    background-color: var(--blanco);
+    padding-bottom: 1rem;
+}
 
 /*---------------BARRA DE NAVEGACIÓN--------------------*/
 .container-nav{
@@ -93,16 +103,14 @@ body{
     right: 10px;
     font-size: 50px;}
 
+
+    
 /*FOOTER - ESTILOS CONSTANTES*/
 .redes a i, .derechos a i{text-align: center;}
 .redes a, .derechos a{
     color: var(--negro);
     cursor: pointer;}
-.container-section{
-    width: 82vw; 
-    background-color: var(--blanco);
-    padding-bottom: 1rem;
-}
+.footer{padding-bottom: 1rem;}
 .redes a i p, .derechos a i p{display: inline-flex;}
 .redes a:hover, .derechos a:hover{color: var(--turqueza); transition: 0.3s;}
 .redes a, .derechos a{font-size: 0.5rem;}
@@ -138,10 +146,16 @@ body{
 
 @media screen and (min-width: 768px) and (max-width: 2560px) {
      /*FOOTER*/
-    .redes a, .derechos a{font-size: 1rem;}
+    .redes a, .derechos a{font-size: 1.1rem;}
+    .footer{padding-bottom: 2rem;}
+
+    /*NAV*/
+    .container-nav{
+        height: 85px;
+        padding: 5px 10%;}
 }
 
 @media screen and (min-width: 2560px) and (max-width: 4000px) {
     /*FOOTER*/
-    .redes a, .derechos a{font-size:1.1rem;}
+    .redes a, .derechos a{font-size:1.2rem;}
 }
