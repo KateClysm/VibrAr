@@ -63,11 +63,7 @@
     background-size: cover;
  }
  #slides .slide_4 {
-<<<<<<< HEAD:css/styles.css
-    background-image: url(/img/TanBionicaslider.png);
-=======
     background-image: url(/img/maneskin.png);
->>>>>>> prototipo:css/inicio.css
     background-size: cover;
  }
  #controls {
@@ -157,11 +153,7 @@
     opacity: 75%;
 }
 
-<<<<<<< HEAD:css/styles.css
-#slides .slide_4:hover {content: url(/img/Tanbionicahover.png);
-=======
 #slides .slide_4:hover {content: url(/img/maneskinbaner.jpg);
->>>>>>> prototipo:css/inicio.css
     transition: 2s;
     cursor: pointer;
     opacity: 75%;
