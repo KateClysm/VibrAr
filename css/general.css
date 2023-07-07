@@ -35,7 +35,7 @@ body{
 .centrarTexto{text-align: center;}
 .container-section{
     width: 82vw; 
-    background-color: var(--blanco);
+    /* background-color: var(--blanco); */
     padding-bottom: 1rem;
 }
 
