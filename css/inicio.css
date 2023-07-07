@@ -228,43 +228,40 @@ aside {float: right;
 
 /*MODIFICACIONES DE LOS ESTILOS GENERALES PARA ESTA SECC EN ESPECÍFICO*/
 .container-blanco{
-   background-color: var(--negro);
-   /* border: 2px solid pink; */}
-/* .container-section{border: 2px solid blue;} */
+   background-color: var(--negro);}
 .redes a, .derechos a{color: var(--blanco);}
 
 
-/******************/
-.container-slider{padding-top: 3rem;}
-.info{
-   /* border: 2px solid green; */
-   display: grid;
-   grid-template-columns: auto auto;
-   gap: 4rem;
-}
+/******************************************************/
+.container-slider{padding-top: 3rem;} /*separa al slider del nav*/
 
-.cartelera, .noticias{
-   height: 100%;
-   background-color: var(--blanco);
-   border-radius: 2px;
-   padding: 0.3rem;
-}
-
-.cartelera img, .noticias img{
-   width: 100%;
-   border-radius: 2px;
-}
-
-.cartelera h2, .noticias h2{
-   text-align: center;
-   font-size: 1.5rem;
-   padding: 1rem;
-}
-
+/*separa las cajas del slider y las alinea*/
 .container-info{
    display: flex;
    justify-content: center;
    align-items: center;
-   padding: 3rem 0rem;
+   padding: 3rem 0rem;}
 
-}
+/*dos columnas*/
+.info{ 
+   display: grid;
+   grid-template-columns: auto auto;
+   gap: 4rem;}
+
+/*estilos de las dos cajitas*/
+.cartelera, .noticias{
+   height: 100%;
+   background-color: var(--blanco);
+   border-radius: 2px;
+   padding: 0.3rem;}
+
+.cartelera img, .noticias img{
+   width: 100%;
+   border-radius: 2px;}
+
+.cartelera h2, .noticias h2{
+   text-align: center;
+   font-size: 1.5rem;
+   padding: 1rem;}
+
+
