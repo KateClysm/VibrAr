@@ -1,10 +1,4 @@
 /*ESTILOS CONSTANTES, no afectados por las media queries*/
-.container-blanco{
-    width: 90vw;
-    background-color: var(--blanco);
-    display: flex;
-    justify-self: center;
-    align-items: center;}
 .info-general{
     width: 82vw;
     height: 100%;}
