@@ -25,22 +25,8 @@
 </head>
 <body class="gradiente">
 
-     <!--Barra de navegación-->
-     <div class="nav">
-        <div class="logo">
-            <img src="resources\vibrarBlanco.png" alt="logoVibrArBlanco" class="logo-nav">
-        </div>
-        <div class="nav-items centradoAbsoluto">
-            <a class="nav-item" href="/index.html">Inicio</a>
-            <a class="nav-item" href="/eventos.html">Eventos</a>
-            <a class="nav-item" href="/nosotros.html">Nosotros</a>
-            <a class="nav-item" href="/contactos.html">Contacto</a>
-        </div>
-    </div>
 
-    <!--Este contenedor centra y separa la pantalla del nav-->
-    <div class="centradoAbsoluto pantalla">
-        <!--Este es el container donde deben trabajar-->
+    <!-- <div class="centradoAbsoluto pantalla">
         <div class="containerContenido">
             <div class="eventos">
                 <h1>Eventos Proximos</h1>
@@ -122,44 +108,170 @@
                 </div>
             </div>
         </div>
+    </div> -->
+
+
+
+
+ <!--nuevo-->
+ <div class="container-nav">
+    <div class="logo">
+        <img src="resources/logotipo-blanco.png" alt="Logo de VibrAr">
     </div>
 
-    <footer class="centradoAbsoluto">
-        <div class="container">
-            <div class="centradoAbsoluto redes">
-                <a class="a-footer" href="#">
-                    <i class="fa-brands fa-instagram icons-footer"> <p class="nombres">VibrAr</p> </i> 
+    <nav>
+        <ul class="nav-links">
+            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="/eventos.html">Eventos</a></li>
+            <li><a href="/nosotros.html">Nosotros</a></li>
+            <li><a href="/contactos.html">Contacto</a></li>
+        </ul>
+    </nav>   
+
+    <a onclick="abrirNavegador()" class="menu" href="#">
+        <i class="fa-solid fa-bars icono-menu"></i>
+    </a>
+
+    <div id="mobile-menu" class="overlay">
+        <a onclick="cerrarNavegador()" class="close">&times;</a>
+        <div class="overlay-content">
+            <a href="/index.html">Inicio</a>
+            <a href="/eventos.html">Eventos</a>
+            <a href="/nosotros.html">Nosotros</a>
+            <a href="/contactos.html">Contacto</a> 
+        </div>
+    </div>
+</div>
+
+
+<div class="container-padre centradoAbsoluto">
+    <div class="container-blanco centradoAbsoluto">
+        <div class="container-section">
+
+            
+            <div class="eventos">
+                <h1>Eventos Proximos</h1>
+                <div class="row-eventos">
+                    <div class="colum-eventos2">
+                        <img class = "flyer-eventos"src="./img/flyertaylor.png" alt="flayer_taylor">
+                    </div>
+                    <div class="colum-eventos1">
+                        <h2>Fechas:</h2>
+                        <ul>
+                            <li>9 de noviembre</li>
+                            <li>10 de noviembre</li>
+                            <li>11 de noviembre</li>
+                        </ul>
+                        <button class="btn-eventos">
+                            <a href="/taylor.html" class="eventos-a">Ver más</a>
+                        </button>
+                    </div>
+                    
+                </div>
+                <div class="row-eventos">
+                    <div class="colum-eventos2">
+                        <img class = "flyer-eventos" src="./img/Theweeknd.png" alt="flayer_theweeknd">
+                    </div>
+                    <div class="colum-eventos1">
+                        <h2>Fechas:</h2>
+                        <ul>
+                            <li>18 de octubre</li>
+                            <li>19 de octubre</li>
+                        </ul>
+                        <button class="btn-eventos">
+                            <a href="/theweeknd.html" class="eventos-a">Ver más</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="row-eventos">
+                    <div class="colum-eventos2">
+                        <img class = "flyer-eventos" src="./img/maneskin.png" alt="flayer_rogerwaters">
+                    </div>
+                    <div class="colum-eventos1">
+                        <h2>Fechas:</h2>
+                        <ul>
+                            <li>29 de octubre</li>
+                        </ul>
+                        <button class="btn-eventos">
+                            <a href="/maneskin.html" class="eventos-a">Ver más</a>
+                        </button>
+                    </div>
+                    
+                </div>
+                <div class="row-eventos">
+                    <div class="colum-eventos2">
+                        <img class = "flyer-eventos" src="./img/redhot.jpg" alt="redhot">
+                    </div>
+                    <div class="colum-eventos1">
+                        <h2>Fechas:</h2>
+                        <ul>
+                            <li>24 de noviembre</li>
+                            <li>26 de noviembre</li>
+                        </ul>
+                        <button class="btn-eventos">
+                            <a href="/redhot.html" class="eventos-a">Ver más</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="row-eventos">
+                    <div class="colum-eventos2">
+                        <img class = "flyer-eventosE" src="./img/evanescence.jpg" alt="evanescence">
+                    </div>
+                    <div class="colum-eventos1">
+                        <h2>Fechas:</h2>
+                        <ul>
+                            <li>17 de octubre</li>
+                        </ul>
+                        <button class="btn-eventos">
+                            <a href="/evanescence.html" class="eventos-a">Ver más</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<footer class="centradoAbsoluto">
+    <div class="container-blanco centradoAbsoluto">
+        <div class="container-section footer">
+
+            <div class="redes centradoAbsoluto">
+                <a href="#">
+                    <i class="fa-brands fa-instagram icons-footer"> <p>VibrAr</p> </i> 
                 </a>
     
-                <a href="#" class="a-footer">
-                    <i class="fa-brands fa-square-facebook icons-footer"> <p class="nombres">VibrAr Oficial</p> </i> 
+                <a href="#">
+                    <i class="fa-brands fa-square-facebook icons-footer"> <p>VibrAr Oficial</p> </i> 
                 </a>
 
-                <a href="#" class="a-footer">
-                    <i class="fa-brands fa-square-twitter icons-footer"> <p class="nombres">VibrArg</p> </i> 
-                </a>                
-            </div>   
+                <a href="#">
+                    <i class="fa-brands fa-square-twitter icons-footer"> <p>VibrArg</p> </i> 
+                </a>  
+            </div>
 
-            <div class="centradoAbsoluto derechos">
-                <p class="derechos">© Derechos reservados por </p>
-
-                <a href="https://github.com/KateClysm"  class="a-footer" target="_blank">
-                    <i class="fa-brands fa-github icons-footer"> <p class="nombres">Maria Monchot</p> </i> 
-                </a>    
-                <a href="https://github.com/militorres84" class="a-footer" target="_blank">
-                    <i class="fa-brands fa-github icons-footer"> <p class="nombres">Milagros Torres</p> </i> 
-                </a>    
-                <a href="https://github.com/AgusBarbona" class="a-footer" target="_blank">
-                    <i class="fa-brands fa-github icons-footer"> <p class="nombres">Agustina Barbona</p> </i> 
-                </a>    
-                <a href="https://github.com/Ariana-Seok" class="a-footer" target="_blank">
-                    <i class="fa-brands fa-github icons-footer"> <p class="nombres">Daniela Fernandez</p> </i>
-                </a>    
-                <a href="https://github.com/Ysluna" class="a-footer" target="_blank">
-                    <i class="fa-brands fa-github icons-footer"> <p class="nombres">Yamila Luna</p> </i> 
-                </a>    
+            <div class="derechos centradoAbsoluto">    
+                <a href="https://github.com/KateClysm/VibrAr" target="_blank">© Derechos reservados por
+                    <i class="fa-brands fa-github icons-footer"> <p>VibrAr Proyect</p> </i> 
+                </a>     
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+    <!--nav script-->
+    <script src="/scripts/nav.js"></script>
 </body>
 </html>

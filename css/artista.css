@@ -1,0 +1,236 @@
+/*LOS SIGUIENTES ESTILOS APLICAN A UN ANCHO DE PANTALLA DE ..1024px..*/
+
+/*---------------------------BANER----------------------------------*/
+.baner{ 
+    height: 36rem; 
+    padding: 3rem 0;
+}
+.baner img{width: 100%;height: 100%;}
+
+/*--------------------------INFO GENERAL----------------------------*/
+.info-general{
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /*importante*/
+}
+
+/*contenedores turquesa*/
+.info h2, .instaFans h3, .fechas h3, .container-ubicacion h3 {
+    background-color: var(--turqueza);
+    color:var(--blanco); 
+    font-size: 0.8rem;
+    padding: 1rem;}
+
+.presentado a{cursor: pointer;}
+.presentado{padding-bottom: 1rem;} /*separación*/
+
+.fechas{ /*stackea las fechas*/
+    display: flex;
+    flex-direction: column;
+    /* box-sizing: content-box; */ }
+
+.fecha{/*grid interno de las fechas*/
+    display: grid;
+    grid-template-columns: auto auto auto;
+    border-top: 0.1rem solid rgba(128, 128, 128, 0.651);
+    padding: 0.6rem 0.2rem;}
+
+.presentado a img{width: 5rem;} /*logos*/
+
+/* .container-instaFans{
+    padding: 1.1rem 0; } */
+
+.instaFans iframe{
+    width: 100%;
+    height: 18vh;}
+
+.presentado a img{width: 9rem;} /*logos*/
+
+.ubicacion{
+    height: 72vh;
+    width: 40vw;
+    display: flex;
+    justify-content: flex-end;}
+
+.ubicacion iframe{
+    height: 100%;
+    width: 100%;
+    border: none;}
+
+.container-ubicacion{padding:0 0rem 0rem 5rem;} /*lo separa de la info*/
+
+
+/*-------------------ARTISTA-----------------------*/
+.artista{
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr;
+    padding: 5rem 0;
+    align-items: center;}
+.visual{
+    height: 65vh;}
+
+.visual iframe{
+    height: 100%;
+    width: 100%;}
+.artista .texto p{ font-size: 1.2rem; text-align: center;}
+.artista .texto {
+    display: grid;
+    align-content: center;
+    grid-template-columns: 1fr;
+    padding-left: 3rem;
+}
+.logoVibrar img{
+    width: 7rem; 
+    text-align: center;}
+
+/*-------------------GENERAL-----------------------*/
+/*border radius*/
+
+.presentado, .instaFans, .fechas, .ubicacion iframe, .container-ubicacion{border-radius: 3px;}
+.container-ubicacion h3 {border-radius: 3px 3px 0px 0px;}
+
+/*centrado de texto*/
+.info h2, .presentado h3, .container-ubicacion h3, .fechas h3, .instaFans h3, .logoVibrar{
+    font-size: 1rem;
+    padding: 1rem;
+    text-align: center;}
+
+.instaFans, .presentado, .fechas, .ubicacion{border: 2px solid var(--turqueza);}
+
+
+
+
+
+/*------------------------MEDIA QUERIES-------------------------*/
+@media screen and (max-width: 1024px){
+    /*cambio de posicionamiento*/
+    .info-general{
+        grid-template-columns: 1fr}
+    .artista{
+        grid-template-columns: 1fr;
+        padding: 1rem 0;
+        align-items: center;}
+
+    /*--------------------BANER----------------------------------*/
+    .baner {
+        height: 35vh;
+        padding: 1rem 0;}
+
+    /*--------------------INFO GENERAL-----------------------*/
+    .info h2,
+    .instaFans h3,
+    .fechas h3,
+    .container-ubicacion h3 {padding: 0.2rem;}
+    .fecha {padding: 0.5rem 0.2rem;}
+    .presentado a img {width: 5rem;}
+    .container-instaFans {padding: 1rem 0;}
+
+    .ubicacion {
+        height: 50vh;
+        width: auto;}
+    .ubicacion iframe {
+        height: 100%;
+        width: 100%;
+        border: none; }
+    .container-ubicacion {padding: 1rem 0rem;}
+
+    /*-------------------ARTISTA-----------------------*/
+    .artista {
+        grid-template-columns: 1fr;
+        padding: 2rem 0 0 0;}
+    .artista .texto p {font-size: 0.8rem;}
+    .artista .texto {
+        grid-template-columns: 1fr;
+        padding-left: 0rem;
+        padding-top: 2rem;}
+    .logoVibrar img {width: 5rem;}
+
+    /*-------------------GENERAL-----------------------*/
+
+    /*centrado de texto*/
+    .info h2,
+    .presentado h3,
+    .container-ubicacion h3,
+    .fechas h3,
+    .instaFans h3,
+    .logoVibrar {
+        font-size: 0.8rem;
+        padding: 1rem;}
+
+    .fecha{font-size: 0.55rem;}
+    .instaFans,
+    .presentado,
+    .fechas,
+    .ubicacion {border: 2px solid var(--turqueza);}
+}
+
+@media screen and (max-width: 320px){
+.visual {height: 40vh;}
+}
+@media screen and (min-width: 375px) and (max-width: 425px) {
+    .visual {height: 45vh;}
+    .fecha{font-size: 0.6rem;}
+}
+@media screen and (min-width: 425px) and (max-width: 550px) {
+    .visual {height: 50vh;}
+    .fecha{font-size: 0.7rem;}
+}
+@media screen and (min-width: 550px) and (max-width: 1024px) {
+    .fecha{font-size: 0.8rem;}
+    .artista .texto p {font-size: 1rem;}
+    .instaFans iframe{
+        width: 100%;
+        height: 23vh;}
+    .baner {
+        height: 55vh;
+        padding: 2rem 0;
+    }
+    .presentado a img{width: 7rem;} /*logos*/
+}
+@media screen and (min-width: 550px) and (max-width: 850px) {
+    .visual {height: 65vh;}
+}
+@media screen and (min-width: 850px) and (max-width: 1024px) {
+    .visual {height: 80vh;}
+    .instaFans iframe{
+        width: 100%;
+        height: 20vh;}
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+    .visual {height: 65vh;}
+    .instaFans iframe{
+        width: 100%;
+        height: 20vh;}
+    .ubicacion {
+        height: 80vh;
+        width: auto;}
+}
+@media screen and (min-width: 1440px) and (max-width: 2000px) {
+    .baner{padding: 5rem 0; height: 75vh;}
+ 
+    .instaFans iframe{height: 15vh;}
+
+    .ubicacion{height: 61vh;}
+
+    .visual {height: 58vh;}
+    
+    .artista .texto p{font-size: 1.5rem;}
+}
+
+@media screen and (min-width: 2000px){
+    .baner{padding: 5rem 0; height: 75vh;}
+ 
+    .instaFans iframe{height: 30vh;}
+
+    .ubicacion{height: 60vh;}
+
+    .visual {height: 56vh;}
+    
+    .artista .texto p{font-size: 1.5rem;}
+}
