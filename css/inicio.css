@@ -168,18 +168,18 @@
     box-shadow: #101010 13px 13px 7px;
 
     
-} */
+} 
 
-/* .anunciostexto {
+ .anunciostexto {
     color: aliceblue;
     padding: 1em;
     background-color: #2B879E;
     text-shadow: #1e1d1d 2px 2px;
-} */
+} 
 
 
 
-/* .Sorteo {width: 20em;
+ .Sorteo {width: 20em;
     height: 16em;
     transition: 1s;
     cursor: pointer;
@@ -188,10 +188,10 @@
 .Sorteo:hover {
     -webkit-transform:scale(0.8);transform:scale(0.8);
     overflow:hidden;
-} */
+} 
 
 
-/* .cartelera {
+.cartelera {
     width: 20em; 
     height: 20em;
     background-color: #B72950;
@@ -202,6 +202,7 @@
 aside {float: right;
     position: relative; bottom: 18.9em;
 }
+
 /* 
 .CarteleraPortada {
     width: 20em;
