@@ -81,115 +81,50 @@
 /*------------MEDIA QUERIES-----------------*/
 
 @media screen and (min-width: 320px){
-    .visual {height: 40vh;}
-    .instaFans iframe{height: 24vh;}}
-
-/*Samsung Galaxy S8+*/
-@media screen and (min-width: 360px){
-    .visual {height: 35vh;}
+    .visual {height: 240px;}
     .fecha{font-size: 0.6rem;}
-    .instaFans iframe{height: 16vh;}
-    .baner{height: 30vh;}
-    .ubicacion {
-        height: 35vh;}
+    .instaFans iframe{height: 140px; width: 100%;}
+    .baner{height: 200px; padding: 1rem 0;}
+    .ubicacion {height: 200px;}
+    .info-general{width: 82vw;}
+    .artista{padding-top: 2rem;}
 }
 
-/*iPhone SE*/
 @media screen and (min-width: 375px){
-    .visual {height: 40vh;}
+    .visual {height: 250px;}
     .fecha{font-size: 0.6rem;}
-    .instaFans iframe{height: 18vh;}
-    .baner{height: 30vh;}
-    .ubicacion {
-        height: 40vh;}
+    .instaFans iframe{height: 120px;}
+    .baner{height: 260px;}
+    .ubicacion {height: 300px;}
 }
 
-/*iPhone 12 Pro, iPhone XR, Pixel 5, Samsung Galaxy S20 Ultra, Samsung Galaxy A51/71*/
-@media screen and (min-width: 390px){
-    .visual {height: 32vh;}
-    .fecha{font-size: 0.7rem;}
-    .instaFans iframe{height: 13vh;}
-    .baner{height: 25vh;}
-    .ubicacion {
-        height: 40vh;}
+@media screen and (min-width: 425px){
+    .visual {height: 290px;}
+    .instaFans iframe{height: 110px;}
+    .baner{height: 240px;}
 }
 
-/*Surface Duo*/
-@media screen and (min-width: 540px){
-    .instaFans iframe{
-        width: 100%;
-        height: 14vh;}
-    .baner{
-        height: 40vh;
-        padding: 2rem 0;
-    }
-    .presentado a img{width: 8rem;} logos
-    .visual {height: 50vh;} 
-}
-
-/*iPad Mini*/
 @media screen and (min-width: 768px){
-    .artista .texto p, .fecha {font-size: 1rem;}
-    .instaFans iframe{
-        width: 100%;
-        height: 13vh;}
-    .baner{
-        height: 35vh;
-        padding: 2rem 0;
-    }
-    .visual {height: 48vh;}  
-}
-
-/*iPad Air*/
-@media screen and (min-width: 820px){
-    .artista .texto p, .fecha {font-size: 1rem;}
-    .instaFans iframe{
-        width: 100%;
-        height: 11vh;}
-    .baner{
-        height: 30vh;
-        padding: 2rem 0;
-    }
-    .presentado a img{width: 8rem;} /*logos*/
-    .visual {height: 43vh;}  
-}
-
-/*Surface Pro 7*/
-@media screen and (min-width: 912px){
-    .artista .texto p, .fecha {font-size: 1rem;}
-    .instaFans iframe{
-        width: 100%;
-        height: 9.5vh;}
-    .baner{
-        height: 30vh;
-        padding: 2rem 0;
-    }
-    .visual {height: 41vh;}  
-    .info h2,
-    .presentado h3,
-    .container-ubicacion h3,
-    .fechas h3,
-    .instaFans h3,
-    .logoVibrar {
-        font-size: 1.1rem;
-        padding: 1rem;}
+    .visual {height: 470px;}
+    .fecha{font-size: 0.6rem;}
+    .instaFans iframe{height: 130px;}
+    .baner{height: 400px; padding: 2rem 0;}
+    .ubicacion {height: 400px;}
 }
 
 
-
-/*Nest Hub*/
 @media screen and (min-width: 1024px){
     .artista .texto p, .fecha {font-size: 0.8rem;}
     .instaFans iframe{
         width: 100%;
-        height: 17vh;}
+        height: 100px;}
     .baner{
-        height: 70vh;
-        padding: 2rem 0;
+        height: 500px;
+        padding: 2.5rem 0;
     }
-    .presentado a img{width: 7rem;} /*logos*/
+    .presentado a img{width: 7rem;}
 
-    .visual {height: 57vh;}  
+    .visual {height: 350px;}  
 
     .info h2, .presentado h3, .container-ubicacion h3, .fechas h3, .instaFans h3, .logoVibrar {
         font-size: 1.1rem;
@@ -207,23 +142,35 @@
     .artista .texto {padding-left: 3rem;}
    
     .ubicacion {
-        height: 80vh;
+        height: 450px;
         width: auto;}
 
  }
+ @media screen and (min-width: 1180px) {
+    .instaFans iframe{
+        width: 100%;
+        height: 130px;}
+    .baner{
+        height: 550px;
+        padding: 3rem 0;
+    }
+    .visual {height: 390px;}  
+    .ubicacion {
+        height: 500px;
+        width: auto;}
 
- /*Nest Hub Max*/
+}
+
 @media screen and (min-width: 1280px) {
     .artista .texto p, .fecha {font-size: 1rem;}
     .instaFans iframe{
         width: 100%;
-        height: 17vh;}
+        height: 130px}
     .baner{
-        height: 70vh;
-        padding: 2rem 0;
+        height: 570px;
+        padding: 3rem 0;
     }
-
-    .visual {height: 52vh;}  
+    .visual {height: 420px;}  
 
     .info h2, .presentado h3, .container-ubicacion h3, .fechas h3, .instaFans h3, .logoVibrar {
         font-size: 1.1rem;
@@ -234,39 +181,33 @@
     .artista .texto {padding-left: 3rem;}
     
     .ubicacion {
-        height: 65vh;
+        height: 500px;
         width: auto;}
 
 }
 
- @media screen and (min-width: 1360px) {
-    .instaFans iframe{
-        width: 100%;
-        height: 20vh;}
-    .baner{
-        height: 80vh;
-        padding: 2rem 0;
-    }
 
-    .visual {height: 65vh;}  
-    .ubicacion {
-        height: 80vh;
-        width: auto;}
-
-}
 
 @media screen and (min-width: 1440px) {
-    .instaFans iframe{
-        width: 100%;
-        height: 17vh;}
+    .visual {height: 450px;}  
     .baner{
-        height: 80vh;
-        padding: 2rem 0;
+        height: 650px;
     }
+}
 
-    .visual {height: 57vh;}  
+@media screen and (min-width: 1800px) {
+    .visual {height: 560px;}  
+    .baner{
+        height: 700px;
+    }
     .ubicacion {
-        height: 65vh;
-        width: auto;}
-
+        height: 550px;}
+}
+@media screen and (min-width: 2560px) {
+    .visual {height: 750px;}  
+    .baner{
+        height: 900px;
+    }
+    .ubicacion {
+        height: 550px;}
 }
