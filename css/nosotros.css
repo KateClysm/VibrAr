@@ -31,6 +31,10 @@ h2, h4, .contacto-texto{
     padding: 20px 0;
 }
 
+@media screen and (min-width: 320px){
+    .containerTexto, h2, h4 {width: 100%; font-size: medium; }
+    .containerContenido {display: block;}
+}
 
 
 
