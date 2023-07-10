@@ -57,15 +57,47 @@
  #slides .slide_2 {
     background-image: url(/img/TheWeekendslider.png);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
  }
+
+ @media (max-width: 767px) {
+   #slides .slide_2 {
+      background-image: url("https://pbs.twimg.com/media/FqoURFgXwAgRxs0?format=jpg&name=large");
+     
+   }
+   
+   #slides .slide_1 {
+      background-image: url("https://cache.umusic.com/_sites/_halo/zrskt/nwff/utbm.jpg");
+   }
+} 
+
  #slides .slide_3 {
     background-image: url(/img/RHCPslider.png);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
  }
  #slides .slide_4 {
     background-image: url(/img/maneskin.png);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
  }
+
+ @media (max-width: 767px) {
+   #slides .slide_3 {
+      background-image: url("https://www.bloomberglinea.com/resizer/_o81AuPJxx2fbYxnlWdUuEG-ee0=/1440x0/filters:format(jpg):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/bloomberglinea/A2QYAOOE4JF6XFM6L3J7W72X2U.jpeg");
+     
+   }
+
+   #slides .slide_4 {
+      background-image: url("https://indiehoy.com/wp-content/uploads/2023/03/maneskin.jpg");
+     
+   }
+}
+
+ 
  #controls {
     margin: -180px 0 0 0;
     width: 100%;
@@ -135,7 +167,7 @@
        margin: 0 auto;
     }
  }
-
+/*
 #slides .slide_1:hover {content: url(/img/Theerastourhover2.jpg);
     cursor: pointer;
     opacity: 55%;
@@ -158,6 +190,7 @@
     cursor: pointer;
     opacity: 75%;
 }
+*/
 
 /* .anuncios {
     width: 20em; 
@@ -249,6 +282,12 @@ aside {float: right;
    grid-template-columns: auto auto;
    gap: 4rem;}
 
+   @media (max-width: 767px) {
+      .info{
+         display:block;
+      }
+   }
+
 /*estilos de las dos cajitas*/
 .cartelera, .noticias{
    height: 100%;
@@ -265,4 +304,91 @@ aside {float: right;
    font-size: 1.5rem;
    padding: 1rem;}
 
+   
+   @media (max-width: 767px){
+      .cartelera, .noticias{
+         margin: 2%;
+            }
+    }
+
+
+/*Box Modal*/
+
+.modal-container{
+   opacity:0;
+   visibility: hidden;
+   position: fixed; /*con esto deja de ser visible*/
+   width: 100%;
+   height: 100vh;
+   top:0;
+   left:0;
+   z-index: 1; /*1000*/
+   background-color: rgba(0,0,0,0.5);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+
+.modal{
+   color:white;
+   width:90%;
+   height: 90%;
+   background-color: violet;
+  /* overflow:hidden; scroll no estaria mal*/
+   border-radius: 20px;
+   padding: 3%;
+
+   display: flex;
+   flex-direction: column;
+   /*justify-content: space-evenly;*/
+
+   position: relative;
+   transition:transform 5s;
+   transform: translateY(0%);
+}
+
+.itemgrid a{
+   font-size: 11px;
+   text-decoration: underline;
+}
+
+
+
+.cerrar{
+   text-align: center;
+   background-color: red;
+   border-radius: 20px;
+   top:5px;
+   right:5px;
+   position: absolute;
+   display: inline-block;
+   width: 20px;
+   height: 20px;
+   cursor:pointer;
+   font-size: 15px;
+   border: 1px solid black;
+}
+
+
+.containergrid{
+   display: grid;
+   grid-template-columns: 3fr;
+   /*background-color: red;*/
+   gap:14px;
+   text-align: center;
+}
+
+.itemgrid{
+   padding:3%;
+   background-color: pink;
+   text-align: center;
+   border-radius: 20px;
+   color:black;
+}
+
+.tituloitemgrid p{
+   color:black;
+   font-size: 30px;
+}
 
