@@ -38,7 +38,7 @@
     transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
     width: 400%;
     line-height: 0;
-    height: 50vh;
+    height: 60vh;
  }
  #slides .slide {
     width: 25%;
@@ -51,11 +51,11 @@
     transition: 2s;
  }
  #slides .slide_1 {
-    background-image: url(/img/Theerastourslider);
+    background-image: url(/resources/taylorbaner.jpg);
     background-size: cover;
  }
  #slides .slide_2 {
-    background-image: url(/img/TheWeekendslider.png);
+    background-image: url(/resources/theweekndbaner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position:center;
@@ -73,13 +73,13 @@
 } 
 
  #slides .slide_3 {
-    background-image: url(/img/RHCPslider.png);
+    background-image: url(/resources/rhcpbaner.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position:center;
  }
  #slides .slide_4 {
-    background-image: url(/img/maneskin.png);
+    background-image: url(/resources/maneskinbaner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position:center;
@@ -167,96 +167,10 @@
        margin: 0 auto;
     }
  }
-/*
-#slides .slide_1:hover {content: url(/img/Theerastourhover2.jpg);
-    cursor: pointer;
-    opacity: 55%;
-}
-
-#slides .slide_2:hover {content: url(/img/ThWeekendhover.png);
-    transition: 2s;
-    cursor: pointer;
-    opacity: 75%;
-}
-
-#slides .slide_3:hover {content: url(/img/RHCPhover.png);
-    transition: 2s;
-    cursor: pointer;
-    opacity: 75%;
-}
-
-#slides .slide_4:hover {content: url(/img/maneskinbaner.jpg);
-    transition: 2s;
-    cursor: pointer;
-    opacity: 75%;
-}
-*/
-
-/* .anuncios {
-    width: 20em; 
-    height: 20em;
-    background-color: #B72950;
-    text-align: center;
-    position: relative; top: 1em;
-    box-shadow: #101010 13px 13px 7px;
-
-    
-} 
-
- .anunciostexto {
-    color: aliceblue;
-    padding: 1em;
-    background-color: #2B879E;
-    text-shadow: #1e1d1d 2px 2px;
-} 
-
-
-
- .Sorteo {width: 20em;
-    height: 16em;
-    transition: 1s;
-    cursor: pointer;
-}
-
-.Sorteo:hover {
-    -webkit-transform:scale(0.8);transform:scale(0.8);
-    overflow:hidden;
-} 
-
-
-.cartelera {
-    width: 20em; 
-    height: 20em;
-    background-color: #B72950;
-    text-align: center;
-    box-shadow: #101010 13px 13px 7px;
-} */
 
 aside {float: right;
     position: relative; bottom: 18.9em;
 }
-
-/* 
-.CarteleraPortada {
-    width: 20em;
-    height: 16em;
-    transition: 1s;
-    cursor: pointer;
-}
-
-.CarteleraTexto {
-    color: aliceblue;
-    padding: 1em;
-    background-color: #2B879E;
-    text-shadow: #1e1d1d 2px 2px;
-}
-
-.CarteleraPortada:hover {
-    -webkit-transform:scale(0.8);transform:scale(0.8);
-    overflow:hidden;
-} */
-
-
 
 
 
@@ -264,6 +178,10 @@ aside {float: right;
 .container-blanco{
    background-color: var(--negro);}
 .redes a, .derechos a{color: var(--blanco);}
+
+
+
+
 
 
 /******************************************************/
