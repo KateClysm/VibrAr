@@ -76,4 +76,5 @@
     .Formulario{width: 80%; margin: 0%; }
     .containerTexto{width: 100%; font-size: medium; }
     .Botons, .control, .control1 {font-size: 15px;}
+    .containerContenido {display: block;}
 }
