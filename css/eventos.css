@@ -81,3 +81,11 @@
         display: inline-block;
     }
 }
+
+
+
+/* ESTILOS DEL BANER DE TAYLOR */
+.baner-artista img {border-radius: 5px 5px 0px 0px;}
+.baner-artista{
+    cursor: pointer !important;} /*el !important no tiene que estar, lo que pasa es que hay algún estilo que conflictúa, hay que quitar ese estilo y luego quitar el !important*/
+.btn-eventos {border-radius: 0px 0px 5px 5px;}
