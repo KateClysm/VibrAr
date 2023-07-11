@@ -50,11 +50,17 @@
 .flyer-eventos {
     max-height: 90%;
     max-width: 100%;
+    display: block;
     flex-grow: 1;
     object-fit: contain;
     border: 1px solid grey;
     border-radius: 8px;
     box-shadow: 0 0 10px grey;
+    transition: opacity 0.3s ease;
+}
+
+link-img{
+    display: none;
 }
 
 .colum-eventos:hover {
@@ -65,3 +71,15 @@
     display: inline-block;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .colum-eventos:hover .btn-eventos{
+        display: none;
+    }
+    .flyer-eventos:hover{
+        transition: all 0.6s ease;
+        filter: brightness(70%);
+    }
+    .link-img .flyer-eventos{
+        display: inline-block;
+    }
+}
