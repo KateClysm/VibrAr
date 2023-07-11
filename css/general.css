@@ -131,6 +131,7 @@ body{
    .menu {display: inherit;}
 
    .container-nav .logo img{height: 30px;}
+   .container-nav .overlay {z-index: 50;}
 }
 
 
