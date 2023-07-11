@@ -31,7 +31,6 @@
 }
 
 .btn-eventos {
-    display: none;
     width: 100%;
     padding: 1rem 1rem;
     font-size: 1rem;
@@ -59,20 +58,19 @@
     transition: opacity 0.3s ease;
 }
 
-link-img{
-    display: none;
+.colum-eventos a {
+    cursor:auto;
 }
 
 .colum-eventos:hover {
     transform: scale(1.04);
 }
 
-.colum-eventos:hover .btn-eventos{
-    display: inline-block;
-}
-
 @media screen and (min-width: 768px) and (max-width: 1023px){
-    .colum-eventos:hover .btn-eventos{
+    .colum-eventos a {
+        cursor: auto;
+    }
+    .btn-eventos{
         display: none;
     }
     .flyer-eventos:hover{
