@@ -1,5 +1,5 @@
 .baner{padding: 2rem 0;}
-.baner img{width: 100%;height: 100%;}
+.baner img{width: 82vw;}
 
 .info-general, .artista{
     display: grid; 
@@ -84,7 +84,7 @@
     .visual {height: 240px;}
     .fecha{font-size: 0.6rem;}
     .instaFans iframe{height: 140px; width: 100%;}
-    .baner{height: 200px; padding: 1rem 0;}
+    .baner{padding: 1rem 0;}
     .ubicacion {height: 200px;}
     .info-general{width: 82vw;}
     .artista{padding-top: 2rem;}
@@ -94,21 +94,19 @@
     .visual {height: 250px;}
     .fecha{font-size: 0.6rem;}
     .instaFans iframe{height: 120px;}
-    .baner{height: 260px;}
     .ubicacion {height: 300px;}
 }
 
 @media screen and (min-width: 425px){
     .visual {height: 290px;}
     .instaFans iframe{height: 110px;}
-    .baner{height: 240px;}
 }
 
 @media screen and (min-width: 768px){
     .visual {height: 470px;}
     .fecha{font-size: 0.6rem;}
     .instaFans iframe{height: 130px;}
-    .baner{height: 400px; padding: 2rem 0;}
+    .baner{padding: 2rem 0;}
     .ubicacion {height: 400px;}
 }
 
@@ -118,10 +116,7 @@
     .instaFans iframe{
         width: 100%;
         height: 100px;}
-    .baner{
-        height: 500px;
-        padding: 2.5rem 0;
-    }
+    .baner{padding: 2.5rem 0;}
     .presentado a img{width: 7rem;}
 
     .visual {height: 350px;}  
@@ -150,10 +145,7 @@
     .instaFans iframe{
         width: 100%;
         height: 130px;}
-    .baner{
-        height: 550px;
-        padding: 3rem 0;
-    }
+    .baner{padding: 3rem 0;}
     .visual {height: 390px;}  
     .ubicacion {
         height: 500px;
@@ -166,10 +158,7 @@
     .instaFans iframe{
         width: 100%;
         height: 130px}
-    .baner{
-        height: 570px;
-        padding: 3rem 0;
-    }
+    .baner{padding: 3rem 0;}
     .visual {height: 430px;}  
 
     .info h2, .presentado h3, .container-ubicacion h3, .fechas h3, .instaFans h3, .logoVibrar {
@@ -189,25 +178,16 @@
 
 
 @media screen and (min-width: 1440px) {
-    .visual {height: 450px;}  
-    .baner{
-        height: 650px;
-    }
+    .visual {height: 450px;}
 }
 
 @media screen and (min-width: 1800px) {
-    .visual {height: 560px;}  
-    .baner{
-        height: 700px;
-    }
+    .visual {height: 560px;}
     .ubicacion {
         height: 550px;}
 }
 @media screen and (min-width: 2560px) {
-    .visual {height: 750px;}  
-    .baner{
-        height: 900px;
-    }
+    .visual {height: 750px;} 
     .ubicacion {
         height: 550px;}
 }
