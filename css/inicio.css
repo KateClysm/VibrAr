@@ -230,49 +230,191 @@ aside {float: right;
     }
 
 
-/*Box Modal*/
 
+
+/*NOTICIAS*/
+.containercajitasnoticias{
+   display: grid;
+   grid-template-columns:3fr 3fr 3fr;
+   /*background-color: red;*/
+   gap:14px;
+   text-align: center;
+   color:white;
+}
+
+@media (max-width: 767px){
+   .containercajitasnoticias{
+      display: block;
+         }
+ }
+
+.noticiass1{
+   background-color: rgb(83, 17, 17);
+   border-radius: 5px;
+   padding: 10px;
+   text-align: center;
+   font-weight: 30px;
+   
+}
+
+@media (max-width: 767px){
+   .noticiass1{
+      margin-bottom: 3%;
+         }
+ }
+/*celulares*/
+
+@media (max-width: 600px){
+   .noticiass1 img{
+      width: 200px;
+   }
+}
+
+@media (max-width: 680px){
+
+   .noticiass1 img{
+      width:250px;
+   }
+}
+
+@media (min-width: 680px) and (max-width: 900px){
+   .noticiass1 img{
+      width:250px;
+   }
+   .containercajitasnoticias{
+      display: grid;
+      grid-template-columns:3fr 3fr;
+   }
+}
+
+
+@media (min-width: 900px) and (max-width: 1215px){
+   
+   .containercajitasnoticias{
+      display: grid;
+      grid-template-columns:3fr 3fr;
+   }
+
+}
+
+@media (min-width: 900px) {
+   .noticiass1 img{
+      width:300px;
+   }
+}
+
+.titulonoticiasymusica{
+
+   font-size: 30px;
+   font-family: 'Fasthand', cursive;
+   text-align: left;
+   color:white;
+   font-weight: lighter;
+   
+ }
+
+ .titulonoticiasymusica2{
+   text-align: center;
+   color:white;
+   font-size: 30px;
+   font-family: 'Fasthand', cursive;
+   font-weight: lighter;
+ }
+
+
+
+ .contenedorlogos{
+   display: grid;
+   grid-template-columns:3fr 3fr 3fr 3fr;
+   gap:14px;
+   color:white;
+
+ }
+
+ @media (max-width: 600px){
+   .contenedorlogos{
+      display: block;
+   
+         }
+ }
+
+ @media (min-width: 601px) and (max-width: 1200px){
+   .contenedorlogos{
+      grid-template-columns: 3fr 3fr;
+   
+   }
+}
+
+/*LAS CUATRO CAJAS DE ABAJO DE NOTICIAS*/
+ .contenedorlogossecciones{
+   text-align: center;
+   padding:10px;
+   background-color: rgb(83, 17, 17);
+   border-radius: 5px;
+   margin-bottom: 30px;
+ }
+
+ .contenedorlogossecciones img{
+  text-align: center;
+  background-color: violet;
+  margin: auto;
+   
+ }
+ .contenedorlogossecciones{
+  /* background-color: blue;*/
+   display: grid;
+
+ }
+
+ @media (max-width: 767px){
+   .contenedorlogossecciones{
+      display: block;
+      margin-top: 3%;
+    /* margin:3%;*/
+         }
+ }
+
+
+
+
+
+
+
+
+
+/*Box Modal
 .modal-container{
    opacity:0;
    visibility: hidden;
-   position: fixed; /*con esto deja de ser visible*/
+   position: fixed; /*con esto deja de ser visible
    width: 100%;
    height: 100vh;
    top:0;
    left:0;
-   z-index: 1; /*1000*/
+   z-index: 1;
    background-color: rgba(0,0,0,0.5);
    display: flex;
    justify-content: center;
    align-items: center;
-   
 }
-
 .modal{
    color:white;
    width:90%;
    height: 90%;
    background-color: violet;
-  /* overflow:hidden; scroll no estaria mal*/
    border-radius: 20px;
    padding: 3%;
-
    display: flex;
    flex-direction: column;
-   /*justify-content: space-evenly;*/
 
    position: relative;
    transition:transform 5s;
    transform: translateY(0%);
 }
-
 .itemgrid a{
    font-size: 11px;
    text-decoration: underline;
 }
-
-
-
 .cerrar{
    text-align: center;
    background-color: red;
@@ -287,16 +429,12 @@ aside {float: right;
    font-size: 15px;
    border: 1px solid black;
 }
-
-
 .containergrid{
    display: grid;
    grid-template-columns: 3fr;
-   /*background-color: red;*/
    gap:14px;
    text-align: center;
 }
-
 .itemgrid{
    padding:3%;
    background-color: pink;
@@ -304,9 +442,8 @@ aside {float: right;
    border-radius: 20px;
    color:black;
 }
-
 .tituloitemgrid p{
    color:black;
    font-size: 30px;
 }
-
+*/
