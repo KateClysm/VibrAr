@@ -113,7 +113,7 @@ body{
 .footer{padding-bottom: 1rem;}
 .redes a i p, .derechos a i p{display: inline-flex;}
 .redes a:hover, .derechos a:hover{color: var(--turqueza); transition: 0.3s;}
-.redes a, .derechos a{font-size: 0.5rem;}
+.redes a, .derechos a{font-size: 0.7rem;}
 .redes a, .derechos a{
     color: var(--negro);
     padding: 0.5rem 0.5rem;}
@@ -131,31 +131,43 @@ body{
    .menu {display: inherit;}
 
    .container-nav .logo img{height: 30px;}
+   .container-nav .overlay {z-index: 50;}
 }
 
 
-@media screen and (min-width: 375px) and (max-width: 500px) {
+@media screen and (min-width: 375px){
     /*FOOTER*/
-    .redes a, .derechos a{font-size: 0.6rem;}
+    .redes a, .derechos a{font-size: 0.7rem;}
 }
 
-@media screen and (min-width: 500px) and (max-width: 768px) {
+@media screen and (min-width: 425px){
     /*FOOTER*/
     .redes a, .derechos a{font-size: 0.8rem;}
 }
 
-@media screen and (min-width: 768px) and (max-width: 2560px) {
+@media screen and (min-width: 768px){
      /*FOOTER*/
-    .redes a, .derechos a{font-size: 1.1rem;}
+    .redes a, .derechos a{font-size: 1rem;}
     .footer{padding-bottom: 2rem;}
 
-    /*NAV*/
-    .container-nav{
-        height: 85px;
-        padding: 5px 10%;}
+    /*NAV*/    
+    .container-nav .overlay a{padding: 1.2rem 0; font-size: 1.2rem;}
+    .container-nav .overlay .close{right:60px; font-size: 6rem;}
 }
 
-@media screen and (min-width: 2560px) and (max-width: 4000px) {
+@media screen and (min-width: 1024px) {
     /*FOOTER*/
     .redes a, .derechos a{font-size:1.2rem;}
+    /*NAV*/
+    .container-nav{height: 80px;}
+}
+
+@media screen and (min-width: 2560px) {
+    /*FOOTER*/
+    .redes a, .derechos a{font-size:1.5rem;}
+     /*NAV*/
+     .container-nav{height: 150px;}
+     .container-nav .logo img {height: 90px;}
+     .container-nav .nav-links a {font-size: 2.5rem;}
+     .container-nav .nav-links li{padding: 20px 80px;}
 }
