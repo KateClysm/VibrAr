@@ -22,8 +22,10 @@
     <!--FONT AWESOME-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
+    <!--HANDLEBARS-->
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
 </head>
-<body class="gradiente">
+<body>
     <div class="container-nav">
         <div class="logo">
             <img src="resources/vibrarBlanco.png" alt="Logo de VibrAr">
@@ -53,78 +55,78 @@
         </div>
     </div>
 
+
+
+
     <div class="container-padre centradoAbsoluto">
         <div class="container-blanco centradoAbsoluto">
             <div class="container-section">
+
                 <!-- Seccion Eventos-->
                 <div class="eventos">
                     <h1 class = "titulo">Proximos Eventos</h1>
-                    <div class="row-eventos">
-                        <div class="colum-eventos">
-                            <a class="baner-artista" href="/taylor.html" >
-                                <img src="resources/taylorbaner.jpg" alt="Banner-Taylor">
-                                <div class="degradado">
-                                    <h4>Ver más...</h4>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="row-eventos">
-                        <div class="colum-eventos">
-                            <a class="baner-artista" href="/theweeknd.html" >
-                                <img src="resources/theweekndbaner.jpg" alt="Banner-Theweeknd">
-                                <div class="degradado">
-                                    <h4>Ver más...</h4>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
 
-                    <div class="row-eventos">
-                        <div class="colum-eventos">
-                            <a class="baner-artista" href="/maneskin.html" >
-                                <img src="resources/maneskinbaner.jpg" alt="Banner-maneskin">
-                                <div class="degradado">
-                                    <h4>Ver más...</h4>
+                    <script>
+                        let templateArtistas = Handlebars.compile(`
+                        {{#each artista}}
+                            <div class="row-eventos">
+                                <div class="colum-eventos">
+                                    <a class="baner-artista" href="{{this.link}}" >
+                                        <img src="{{this.baner}}" alt="{{this.alt}}">
+                                        <div class="degradado">
+                                            <h4>Ver más...</h4>
+                                        </div>
+                                    </a>
                                 </div>
-                            </a>
-                        </div>
-                    </div>
+                            </div>
+                        {{/each}}
+                        `);
 
-                    <div class="row-eventos">
-                        <div class="colum-eventos">
-                            <a class="baner-artista" href="/redhot.html">
-                                <img src="resources/rhcpbaner.png" alt="Banner-rhcp">
-                                <div class="degradado">
-                                    <h4>Ver más...</h4>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
+                        const listaArtistas = {
+                          artista: [
+                            {
+                              nombre: "Taylor Swift",
+                              baner: "resources/taylorbaner.jpg",
+                              link:"taylor.html",
+                              alt: "Baner Taylor Swift"
+                            },
+                            {
+                              nombre: "The Weeknd",
+                              baner: "resources/theweekndbaner.jpg",
+                              link:"theweeknd.html",
+                              alt: "Baner The Weeknd"
+                            },
+                            {
+                              nombre: "Evanescence",
+                              baner: "resources/Evanescencebaner.jpg",
+                              link:"evanescence.html",
+                              alt: "Baner Evanescence"
+                            },
+                            {
+                              nombre: "Maneskin",
+                              baner: "resources/maneskinbaner.jpg",
+                              link:"maneskin.html",
+                              alt: "Baner Maneskin"
+                            },
+                            {
+                              nombre: "Red Hot Chili Peppers",
+                              baner: "resources/rhcpbaner.png",
+                              link:"redhot.html",
+                              alt: "Red Hot Chili Peppers"
+                            },
+                            {
+                              nombre: "Duki",
+                              baner: "resources/dukibaner.jpg",
+                              link:"duki.html",
+                              alt: "Red Duki"
+                            }
+                          ]
+                        };
+                        document.write(templateArtistas(listaArtistas));
+                      </script>
 
-                    <div class="row-eventos">
-                        <div class="colum-eventos">
-                            <a class="baner-artista" href="/evanescence.html" >
-                                <img src="resources/Evanescencebaner.jpg" alt="Banner-Evanescence">
-                                <div class="degradado">
-                                    <h4>Ver más...</h4>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="row-eventos">
-                        <div class="colum-eventos">
-                            <a class="baner-artista" href="/duki.html" >
-                                <img src="resources/dukibaner.jpg" alt="Banner-Duki">
-                                <div class="degradado">
-                                    <h4>Ver más...</h4>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
+                      
                 </div>
-
             </div>
         </div>
     </div>
@@ -156,8 +158,9 @@
         </div>
     </footer>
 
+
+
     <!--nav script-->
     <script src="scripts/nav.js"></script>
-    <script src="scripts/eventos.js"></script>
 </body>
 </html>
