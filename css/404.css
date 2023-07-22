@@ -1,68 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-
-*{
+.container-general{
+    width: 100%;
+    background-color: var(--blanco);
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    position: relative; bottom: 1em;
     font-family: 'Roboto', sans-serif;
 }
-
-body {background-image: url(/img/fondoprincipal.jpg);
-    background-color: rgb(252, 241, 225);
-    background-repeat: no-repeat;
-    background-size: cover;}
-
-.OOPS {
-    height: 15em;
-    position: relative; top: 3em;
+.container404{
+    background-color: var(--blanco);
+    height: 100vh;
+    width: 80vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
-    .OOPSimg {
-    width: 12em;
-}
-
-.Taylorimg {
-    width: 12em;
+.container404 a img{
+    width: 200px;
     border-radius: 50%;
+    display: flex;
+}
+.container404 a{
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px 2px var(--negro);
 }
 
-.Error1 {
-    height: 4em
+.container404 a:hover{
+    box-shadow: 0px 0px 20px 4px var(--fucsia);
+}
+.container404 h1,h2{
+    padding-bottom: 2rem;
+}
+.container404 h3{
+    padding-top: 2rem;
 }
 
-.Texto1 {
-    text-shadow: #B72950 1px 1px 1px;
+.container404 h1{
+    color: var(--fucsia);
 }
-
-.Error2 {
-
-    height: 13px;
+.container404 h3{
+    font-size: 1rem;
 }
-
-.BotonInicio {
-    padding: 2em;
-}
-
-button {
-    outline: none;
-    color: #ffffff;
-    text-shadow: 2px 2px #B72950;
-    font-weight: bold;
-    padding: 1em;
-    padding-left: 3em;
-    padding-right: 3em;
-    border: 2px dashed #fdf3fa;
-    border-radius: 15px;
-    background-color: #CE5274;
-    box-shadow: 0 0 0 4px #B72950, 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
-    transition: .1s ease-in-out, .4s color;
-    cursor: pointer;
-  }
-  
-  button:active {
-    transform: translateX(0.1em) translateY(0.1em);
-    box-shadow: 0 0 0 4px #2B879E, 1.5px 1.5px 2.5px 1.5px rgba(0, 0, 0, 0.5);
-    
-  }

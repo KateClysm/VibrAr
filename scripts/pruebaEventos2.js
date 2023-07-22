@@ -79,19 +79,36 @@ let templateBaners = Handlebars.compile(`
 </div>`);
 
 
-// document.getElementById("artistasContainer").innerHTML = templateBaners(parseArtistas);
+document.getElementById("artistasContainer").innerHTML = templateBaners(parseArtistas);
 
 
+
+
+
+
+// console.log(anchor);
+// console.log(anchor.id);
+// anchor.id = document.getElementsByClassName("baner-artista")[0].id;
+
+// if (anchor.id == "TaylorSwift"){
+//     console.log(anchor.id)
+// };
+
+// let aux = $("#{{identificador}}").html();
+
+
+
+
+// function mifuncion() {
+//     alert("funciona");
+// }  FUNCIONA
+
+function mifuncion() {
+    console.log("funciona la función");
+    Handlebars.document() //BUSCAR PROPIEDADES DE HANDLEBARS
+}
 
 
 const anchor = document.getElementsByClassName("baner-artista");
 
-console.log(anchor);
-console.log(anchor.id);
-anchor.id = document.getElementsByClassName("baner-artista")[0].id;
-
-if (anchor.id == "TaylorSwift"){
-    console.log(anchor.id)
-};
-
-
+anchor.addEventListener( "click" , mifuncion() );
