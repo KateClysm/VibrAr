@@ -80,3 +80,18 @@ let templateBaners = Handlebars.compile(`
 
 
 // document.getElementById("artistasContainer").innerHTML = templateBaners(parseArtistas);
+
+
+
+
+const anchor = document.getElementsByClassName("baner-artista");
+
+console.log(anchor);
+console.log(anchor.id);
+anchor.id = document.getElementsByClassName("baner-artista")[0].id;
+
+if (anchor.id == "TaylorSwift"){
+    console.log(anchor.id)
+};
+
+
