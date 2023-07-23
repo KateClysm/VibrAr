@@ -189,7 +189,7 @@
    }
 
    #slides {
-      max-width: calc(100% - 140px);
+      max-width:100%;
       margin: 0 auto;
    }
 }
@@ -338,3 +338,201 @@ aside {
       margin-top: 3%;
    }
 }
+
+/*estilos de las dos cajitas*/
+
+/*separa las cajas del slider y las alinea*/
+.container-info{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 3rem 0rem;}
+
+/*dos columnas*/
+.info{ 
+   display: grid;
+   grid-template-columns: auto auto;
+   gap: 4rem;}
+
+   @media (max-width: 767px) {
+      .info{
+         display:block;
+      }
+   }
+
+
+
+.cartelera, .noticias{
+   height: 100%;
+   background-color:rgb(179 116 243);
+   border-radius: 2px;
+   padding: 0.3rem;
+   margin:0.5%;
+}
+
+.cartelera img, .noticias img{
+   width: 100%;
+   border-radius: 2px;}
+
+.cartelera h2, .noticias h2{
+   text-align: center;
+   font-size: 1.5rem;
+   padding: 1rem;}
+
+ 
+   @media (max-width: 767px){
+      .cartelera, .noticias{
+         margin: 2%;
+            }
+    }
+
+
+
+/*Box Modal*/
+
+.modal-container{
+   opacity:0;
+   visibility: hidden;
+   position: fixed; /*con esto deja de ser visible*/
+   width: 100%;
+   height: 100vh;
+   top:0;
+   left:0;
+   z-index: 1;
+   background-color: rgba(0,0,0,0.5);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+
+.modal{
+   color:black;
+   width:90%;
+   height: 90%;
+   background-color:rgb(179 116 243);
+   border-radius: 10px;
+   padding: 3%;
+
+   display: flex;
+   flex-direction: column;
+
+   position: relative;
+   transition:transform 5s;
+   transform: translateY(0%);
+
+   overflow-y: scroll;
+   overflow-x: none;
+}
+
+.modal::-webkit-scrollbar {
+   width: 9px;
+   border-radius: 100px;
+   
+ }
+ 
+ .modal::-webkit-scrollbar-thumb {
+   background-color: #580036;
+ }
+
+ /* Color del fondo del scrollbar */
+.modal::-webkit-scrollbar-track {
+   background-color:none;
+ }
+
+.itemgrid a{
+   font-size: 11px;
+   text-decoration: underline;
+}
+
+
+
+.cerrar{
+   text-align: center;
+   background-color: rgb(87, 2, 82);
+   border-radius: 20px;
+   top:5px;
+   right:5px;
+   position: absolute;
+   display: inline-block;
+   width: 20px;
+   height: 20px;
+   cursor:pointer;
+   font-size: 15px;
+   border:none;
+   color:white;
+}
+
+.cerrar:hover{
+   background-color: violet;
+}
+
+.containergrid{
+   display: grid;
+   grid-template-columns: 3fr;
+   gap:14px;
+   text-align: center;
+}
+
+.itemgrid{
+   padding:3%;
+   background-color: pink;
+   text-align: center;
+   border-radius: 20px;
+   color:black;
+}
+
+.tituloitemgrid p{
+   color:black;
+   font-size: 30px;
+}
+
+/* formulario  */
+.formulario{
+   background-color: rgb(121, 23, 112);
+   display: grid;
+   padding: 15px;
+   margin-left: 20%;
+   margin-right: 20%;
+}
+.formulario input{
+   font-family:inherit;
+   border-radius: 10px;
+   margin-top:10px;
+   height: 40px;
+   margin-left: 30px;
+   margin-right: 30px;
+   text-align: center;
+   border-width: 0;
+}
+
+.formulario button{
+   background-color: violet;
+   padding:5px;
+   margin-top: 20px;
+   margin-left:20%;
+   margin-right:20%;
+   border-width: 0;
+}
+
+.formulario button:hover{
+   background-color:pink;
+}
+
+
+ @media (max-width: 600px) {
+   .formulario{
+      margin-left: 5%;
+      margin-right: 5%;
+    
+   }
+
+   .formulario button{
+      margin-top: 10%;
+      margin-left:auto;
+      margin-right: auto;
+      padding:3px;
+         }
+}
+
+
