@@ -28,7 +28,7 @@
     position: absolute;
     right: 30px;
     top: 20px;
-    font-size: 3.2rem;
+    font-size: 1.7rem;
     font-weight: 700;
     color: aliceblue;
     transition: .2s ease;
@@ -59,7 +59,7 @@
 a{
     text-decoration: none;
     color: var(--negro);
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 i{padding: 0.3rem;}
 
