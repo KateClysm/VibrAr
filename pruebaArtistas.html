@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>VibrAr - Contactos</title>
+    <title>VibrAr - Artista</title>
 
-    <!--ÍCONO DE LA PÁGINA-->
-    <link rel="icon" type="image/png" href="resources/miniVibrarBlanco.png">
+   <!--ÍCONO DE LA PÁGINA-->
+   <link rel="icon" type="image/png" href="resources/miniVibrarBlanco.png">
      
     <!--CSS GENERAL-->
     <link rel="stylesheet" href="css/general.css">
 
     <!--CSS PARTICULAR-->
-    <link rel="stylesheet" href="css/contactos.css">
+    <link rel="stylesheet" href="css/artista.css">
 
     <!--GOOGLE FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,6 +23,8 @@
     <!--FONT AWESOME-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
+    <!--HANDLEBARS-->
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
 </head>
 <body>
 
@@ -57,57 +59,20 @@
     </div>
 
 
-    <div class="container-padre centradoAbsoluto">
-        <div class="container-blanco centradoAbsoluto">
-            <div class="container-section">
 
-           <div class="containerTexto">
-                <h1>
-                    <div class="logo-en-pagina centrarTexto">
-                        <img src="resources/vibrarVioleta.png" alt="" class="logoContacto">
-                    </div>
-                </h1>
-                
-                <p class="centrarTexto contacto-texto">
-                    Nuestro equipo de atención al cliente esta disponible para ayudarte de 10:00 a 16hs.
-                    No dudes en comunicarte con nosotros si necesitas información adicional sobre algún evento o si tenés 
-                    alguna consulta en específico. Valoramos tu opinión y nos esforzamos por brindarte la mejor experiencia
-                    posible.
-                    Además, si sos un organizador de eventos y te gustaría que tu concierto o espectáculo aparezca en nuestra
-                    página, no dudes en contactarnos. Estamos abiertos a colaboraciones y siempre buscamos ampliar nuestra
-                    oferta de eventos para brindar a nuestros usuarios una experiencia completa.
-                </p> 
 
-                <div class="centrarTexto">
-                    ¿Tenés alguna pregunta, comentario o sugerencia? Nos encantaría escucharte.
-                    Para ponerte en contacto con nosotros.
-                </div>
-           </div>
+
+
+    <div class="artistasContainer" id="Taylor"></div>
     
-           <div class="centradoAbsoluto">
-                <div class="Formulario"> 
-                    <input class="control" type="text" name="Nombres" id="Nombres" placeholder="Nombres">
-                    <input class="control" type="text" name="Apellido" id="Apellido" placeholder="Apellido">
-                    <input class="control" type="text" name="Teléfono" id="Teléfono" placeholder="Teléfono">
-                    <input class="control1" type="text" name="Motivo" id="Motivo" placeholder="Motivo">
-                    <input class="control1" type="email" name="Mail" id="Mail" placeholder="Mail">
-                    <input class="control2" type="text" name="Mensaje" id="Mensaje" placeholder="Mensaje">
-                    <input class="Botons boton-enviar" type="submit" value="Enviar">
-                </div>
-           </div>
-
-        </div>
-    
-    </div>  
-
-            </div>
-        </div>
-    </div>
 
 
 
 
-    
+
+
+
+
     <footer class="centradoAbsoluto">
         <div class="container-blanco centradoAbsoluto">
             <div class="container-section footer">
@@ -138,42 +103,10 @@
 
     <!--nav script-->
     <script src="/scripts/nav.js"></script>
+
+    <!--HANDLEBARS-->
+    <script type="module" src="scripts/artistas.js"></script>
+    
 </body>
 </html>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-  
