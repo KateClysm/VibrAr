@@ -34,13 +34,6 @@ const artistasBaners = `{
         "link" : "redhot.html",
         "alt" : "Red Hot Chili Peppers",
         "identificacion" : "RedHotChiliPeppers"
-      },
-      {
-        "nombre" : "Duki",
-        "baner" : "resources/dukibaner.jpg",
-        "link" : "duki.html",
-        "alt" : "Red Duki",
-        "identificacion" : "Duki"
       }
     ]
   }`;
@@ -62,7 +55,7 @@ let templateBaners = Handlebars.compile(`
                     {{#each artista}}
                         <div class="row-eventos">
                             <div class="colum-eventos">
-                                <a class="baner-artista" href="" id="{{this.identificacion}}">
+                                <a class="baner-artista" href="{{this.link}}" id="{{this.identificacion}}">
                                     <img src="{{this.baner}}" alt="{{this.alt}}">
                                     <div class="degradado">
                                         <h4>Ver más...</h4>
@@ -79,6 +72,6 @@ let templateBaners = Handlebars.compile(`
 </div>`);
 
 
-document.getElementById("artistasContainer").innerHTML = templateBaners(parseArtistas);
+document.getElementById("container-evento").innerHTML = templateBaners(parseArtistas);
 
 
