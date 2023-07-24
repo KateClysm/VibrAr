@@ -17,6 +17,10 @@ https://vibrar-argentina.web.app/
 https://trello.com/b/B43LzBu0/grupo-3-organizaci%C3%B3n
 <br>
 
+<h3>Nuestro Figma:</h3>
+https://www.figma.com/file/QwoDtfi42F2WHPyuqCCIJ4/VibrAr?type=design&node-id=0-1&mode=design&t=NG6wY0Isf4EimPT0-0
+<br>
+
 <h3>Prototipos en Figma:</h3>
 
 ![Diseño](https://github.com/KateClysm/VibrAr/assets/109751647/ea18a160-5e9e-4f78-a646-ce00010cdfa2)
