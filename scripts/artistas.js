@@ -1,6 +1,7 @@
 const listaArtistas = `{
-    "artista" : [
-    {
+
+    "Taylor" : 
+      {
         "nombre": "TaylorSwift",
   
         "baner": "resources/taylorbaner.jpg",
@@ -56,7 +57,8 @@ const listaArtistas = `{
      
     },
         
-    {
+    "TheWeeknd": 
+      {
         "nombre": "TheWeeknd",
   
         "baner": "resources/theweekndbaner.jpg",
@@ -105,7 +107,8 @@ const listaArtistas = `{
         "descripcion": " numquam odit placeat esse. Ea quia, cum explicabo reprehenderit minus error repudiandae, id quos officiis dolorem quam quaerat commodi voluptatem esse veritatis molestias ratione excepturi. Facere magnam perferendis, doloribus sunt amet id quo enim totam eveniet officiis doloremque laudantium rerum, pariatur velit odio quasi obcaecati ex nihil expedita omnis? Voluptas alias magnam velit! Quasi non distinctio velit autem illo nostrum cupiditate, tenetur laudantium sequi voluptatibus. Nobis repellat, officiis facilis autem pariatur nesciunt animi quasi totam, a veritatis quibusdam."
     },
   
-    {
+    "Duki" : 
+      {
         "nombre": "Duki",
   
         "baner": "resources/dukibaner.jpg",
@@ -154,7 +157,8 @@ const listaArtistas = `{
         "descripcion": " numquam odit placeat esse. Ea quia, cum explicabo reprehenderit minus error repudiandae, id quos officiis dolorem quam quaerat commodi voluptatem esse veritatis molestias ratione excepturi. Facere magnam perferendis, doloribus sunt amet id quo enim totam eveniet officiis doloremque laudantium rerum, pariatur velit odio quasi obcaecati ex nihil expedita omnis? Voluptas alias magnam velit! Quasi non distinctio velit autem illo nostrum cupiditate, tenetur laudantium sequi voluptatibus. Nobis repellat, officiis facilis autem pariatur nesciunt animi quasi totam, a veritatis quibusdam."
     },
     
-    {
+    "RedHotChiliPeppers":
+      {
         "nombre": "RedHotChiliPeppers",
   
         "baner": "resources/rhcpbaner.png",
@@ -203,8 +207,9 @@ const listaArtistas = `{
         "descripcion": " numquam odit placeat esse. Ea quia, cum explicabo reprehenderit minus error repudiandae, id quos officiis dolorem quam quaerat commodi voluptatem esse veritatis molestias ratione excepturi. Facere magnam perferendis, doloribus sunt amet id quo enim totam eveniet officiis doloremque laudantium rerum, pariatur velit odio quasi obcaecati ex nihil expedita omnis? Voluptas alias magnam velit! Quasi non distinctio velit autem illo nostrum cupiditate, tenetur laudantium sequi voluptatibus. Nobis repellat, officiis facilis autem pariatur nesciunt animi quasi totam, a veritatis quibusdam."
     },
   
-    {
-        "nombre": "Evanescense",
+    "Evanescence": 
+      {
+        "nombre": "Evanescence",
   
         "baner": "resources/Evanescencebaner.jpg",
   
@@ -242,7 +247,8 @@ const listaArtistas = `{
         "descripcion": " numquam odit placeat esse. Ea quia, cum explicabo reprehenderit minus error repudiandae, id quos officiis dolorem quam quaerat commodi voluptatem esse veritatis molestias ratione excepturi. Facere magnam perferendis, doloribus sunt amet id quo enim totam eveniet officiis doloremque laudantium rerum, pariatur velit odio quasi obcaecati ex nihil expedita omnis? Voluptas alias magnam velit! Quasi non distinctio velit autem illo nostrum cupiditate, tenetur laudantium sequi voluptatibus. Nobis repellat, officiis facilis autem pariatur nesciunt animi quasi totam, a veritatis quibusdam."
     },
   
-    {
+    "Maneskin":
+      {
         "nombre": "Maneskin",
   
         "baner": "resources/maneskinbaner.jpg",
@@ -280,7 +286,8 @@ const listaArtistas = `{
   
         "descripcion": " numquam odit placeat esse. Ea quia, cum explicabo reprehenderit minus error repudiandae, id quos officiis dolorem quam quaerat commodi voluptatem esse veritatis molestias ratione excepturi. Facere magnam perferendis, doloribus sunt amet id quo enim totam eveniet officiis doloremque laudantium rerum, pariatur velit odio quasi obcaecati ex nihil expedita omnis? Voluptas alias magnam velit! Quasi non distinctio velit autem illo nostrum cupiditate, tenetur laudantium sequi voluptatibus. Nobis repellat, officiis facilis autem pariatur nesciunt animi quasi totam, a veritatis quibusdam."
     }
-]}`;
+
+}`;
 
 
 const LA = (JSON.parse(listaArtistas)); //PARSEO DEL JSON = convierte a objeto
@@ -359,8 +366,5 @@ let templateArtista = Handlebars.compile(`
        
 `);
 
+document.getElementById("Taylor").innerHTML = templateArtista(LA.Taylor);
 
-// document.getElementById("artista").innerHTML = templateArtista(LA.artista[0]);
-
-//HACER UNA FUNCIÓN QUE EVALÚE EL CLICK DE EVENTOS Y PASAR UN VALOR A UNA VARIABLE,
-//ESA VARIABLE PONERLA EN EL ACCESO A LA LISTA DE ARTISTAS (REEMPLAZAR EL 0 POR EL NOMBRE DE LA VARIABLE)

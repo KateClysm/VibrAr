@@ -79,4 +79,6 @@ let templateBaners = Handlebars.compile(`
 </div>`);
 
 
-// document.getElementById("artistasContainer").innerHTML = templateBaners(parseArtistas);
+document.getElementById("artistasContainer").innerHTML = templateBaners(parseArtistas);
+
+

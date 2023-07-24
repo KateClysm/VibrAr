@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eventos - VibrAr</title>
 
-    <!--ÍCONO DE LA PÁGINA-->
-    <link rel="icon" type="image/png" href="resources/miniVibrarBlanco.png">
+    <title>VibrAr - Artista</title>
 
+   <!--ÍCONO DE LA PÁGINA-->
+   <link rel="icon" type="image/png" href="resources/miniVibrarBlanco.png">
+     
     <!--CSS GENERAL-->
     <link rel="stylesheet" href="css/general.css">
 
     <!--CSS PARTICULAR-->
-    <link rel="stylesheet" href="css/eventos.css">
+    <link rel="stylesheet" href="css/artista.css">
 
     <!--GOOGLE FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,6 +27,8 @@
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
 </head>
 <body>
+
+    <!--Barra de navegación-->
     <div class="container-nav">
         <div class="logo">
             <img src="resources/vibrarBlanco.png" alt="Logo de VibrAr">
@@ -43,7 +46,7 @@
         <a onclick="abrirNavegador()" class="menu" href="#">
             <i class="fa-solid fa-bars icono-menu"></i>
         </a>
-
+    
         <div id="mobile-menu" class="overlay">
             <a onclick="cerrarNavegador()" class="close">&times;</a>
             <div class="overlay-content">
@@ -57,9 +60,16 @@
 
 
 
-    <div class="artistasContainer" id="artistasContainer"></div>
 
+
+
+    <div class="artistasContainer" id="Taylor"></div>
     
+
+
+
+
+
 
 
 
@@ -75,7 +85,7 @@
                     <a href="#">
                         <i class="fa-brands fa-square-facebook icons-footer"> <p>VibrAr Oficial</p> </i> 
                     </a>
-
+    
                     <a href="#">
                         <i class="fa-brands fa-square-twitter icons-footer"> <p>VibrArg</p> </i> 
                     </a>  
@@ -89,17 +99,14 @@
             </div>
         </div>
     </footer>
-
-
-    <!--  DEBE IR ANTES QUE LOS DEMÁS SCRIPTS
-    Fragmento 3.x: -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+ 
 
     <!--nav script-->
-    <script  src="scripts/nav.js"></script>
-    <script  src="scripts/artista2.js"></script>
-    <script  src="scripts/pruebaEventos2.js"></script>
-   
+    <script src="/scripts/nav.js"></script>
+
+    <!--HANDLEBARS-->
+    <script type="module" src="scripts/artistas.js"></script>
     
 </body>
 </html>
+
