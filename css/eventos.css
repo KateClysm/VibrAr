@@ -7,6 +7,7 @@
     align-items: center;
     
 }
+
 .titulo {
     contain: content;
     font-family: 'PT Sans', sans-serif;
@@ -18,7 +19,7 @@
     background-size: 1em;
     font-size: 2.5em;
     align-self: center;
-    padding: 3rem 1rem 2rem 4rem;
+    padding: 3rem 1rem 4rem 4rem;
 }
 
 
@@ -102,6 +103,17 @@
 
     .row-eventos {
         padding-bottom: 3rem;
+    }
+
+    .degradado:hover h4{
+        display: block;
+        opacity: 1;
+        color: white;
+        position: relative;
+        font-size: 0.8rem;
+        text-align: center;
+        font-family: 'PT Sans', sans-serif;
+        text-shadow: 0 0 3px #7b7a7a, 0 0 5px #000000;
     }
 
 }
