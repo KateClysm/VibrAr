@@ -4,7 +4,7 @@
 <br>
 <h3>Integrantes:</h3>
 
-Maria Monchot   |    Yamila Luna   |    Daniela Fernandez   |    Milagros Torres   |    Agustina Barbona 
+Maria Monchot   |    Yamila Luna   |    Daniela Fernandez   |    Milagros Torres   |    Agustina Barbona   |    Ana Corimayo   |    Guillermina Gatti 
 <br>
 
 <h3>Organización del proyecto en Trello:</h3>
