@@ -377,6 +377,7 @@ aside {
 
 .cartelera img, .noticias img{
    width: 100%;
+   height: 80%;
    border-radius: 2px;}
 
 .cartelera h2, .noticias h2{

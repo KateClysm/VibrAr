@@ -135,7 +135,8 @@ i{padding: 0.3rem;}
     .container-section{width: 80%; font-size: medium; display: block;}
     .integrantes{font-size: 1.5rem; margin: auto;}
     .gallery{display: inline-block;}
-    .card{width: 80%; margin: 10px 0px 30px 30px;}
+    .card{width: 80%; margin: 10px 0px 30px 8px;}
+    .footer {text-align: center;}
 }
 
 .speach{
