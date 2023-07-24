@@ -1,4 +1,3 @@
-![Sección Eventos](https://github.com/KateClysm/VibrAr/assets/109751647/efd6113d-ce6f-48cd-b4b0-543df691bd41)
 <h1>VibrAr</h1>
 <br>
 <h2>Proyecto Grupal sobre una página de eventos, hecho para Empujar Coders.</h2>
